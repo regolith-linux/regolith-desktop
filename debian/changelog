@@ -1,0 +1,7 @@
+regolith-desktop (2.0-1) bionic; urgency=medium
+
+  * Initial release
+  * Migrating from Regolith 1 project
+  * Removes several unnecessary dependencies
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sat, 23 Feb 2019 11:18:51 -0800
