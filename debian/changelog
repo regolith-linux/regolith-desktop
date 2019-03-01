@@ -1,3 +1,9 @@
+regolith-desktop (2.01-1ubuntu1) bionic; urgency=medium
+
+  * Added regolith-terminal. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 28 Feb 2019 21:04:57 -0800
+
 regolith-desktop (2.0-1) bionic; urgency=medium
 
   * Initial release
