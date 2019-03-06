@@ -1,3 +1,21 @@
+regolith-desktop (2.05-1ubuntu2) bionic; urgency=medium
+
+  * Add dependency on regolith-i3blocks 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 21:26:42 -0800
+
+regolith-desktop (2.05-1ubuntu1) bionic; urgency=medium
+
+  * Add dependency on regolith-terminal 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 19:20:16 -0800
+
+regolith-desktop (2.01-1ubuntu3) bionic; urgency=medium
+
+  * Move to regolith-i3-wm dependency. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 15:23:16 -0800
+
 regolith-desktop (2.01-1ubuntu2) bionic; urgency=medium
 
   * Move to regolith-i3-wm-gaps dependency. 
