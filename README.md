@@ -2,7 +2,7 @@
 
 Regolith Desktop Environment is a polished, productivity-focused computer interface.  It combines the light-weight and efficient UI metaphor of tiling window management with the usability of gnome.
 
-# Screens
+## Screens
 
 ![After login](assets/screenshot-empty.png?raw=true "After login.")
 
@@ -28,7 +28,7 @@ Quickly switch between applications with *[meta]*-w, which invokes the window sw
 
 Gnome deals with system configuration with a clean UI for managing wireless connections, monitors, and other details.
 
-# Install
+## Install
 
 To install Regolith on an existing Ubuntu 18.04 computer, perform the following steps:
 
@@ -38,8 +38,6 @@ To install Regolith on an existing Ubuntu 18.04 computer, perform the following 
 4. To login after reboot, select Regolith instead of Ubuntu:
 
 ![Login](assets/screenshot-login.png?raw=true "Login")
-
-# Learn More
 
 ## User Guide
 
