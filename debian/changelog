@@ -1,3 +1,21 @@
+regolith-desktop (2.05-1ubuntu5) bionic; urgency=medium
+
+  * Add dependency on Conky config for keybindings. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sat, 09 Mar 2019 21:45:22 -0800
+
+regolith-desktop (2.05-1ubuntu4) bionic; urgency=medium
+
+  * Add dependency on icon theme. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 07 Mar 2019 20:30:55 -0800
+
+regolith-desktop (2.05-1ubuntu3) bionic; urgency=medium
+
+  * Remove dependency on deprecated package regolith-i3-config 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 07 Mar 2019 20:21:31 -0800
+
 regolith-desktop (2.05-1ubuntu2) bionic; urgency=medium
 
   * Add dependency on regolith-i3blocks 
