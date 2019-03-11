@@ -6,7 +6,7 @@ Regolith Desktop Environment is a polished, productivity-focused computer interf
 
 ![After login](assets/screenshot-empty.png?raw=true "After login.")
 
-By default, Regolith reserves all screen space to applications. All you see here is wallpaper.
+By default, Regolith reserves all screen space to your applications. All you see when first logging in is wallpaper. This is a *primary feature* of Regolith.
 
 ![Regolith Bar](assets/screenshot-bar.png?raw=true "Regolith Bar")
 
