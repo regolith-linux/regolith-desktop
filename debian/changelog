@@ -1,3 +1,15 @@
+regolith-desktop (2.06-1ubuntu2) bionic; urgency=medium
+
+  * Add unclutter-xfixes. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 17 Mar 2019 09:41:58 -0700
+
+regolith-desktop (2.06-1ubuntu1) bionic; urgency=medium
+
+  * Depend on new package of simple term (st). 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sat, 16 Mar 2019 10:46:35 -0700
+
 regolith-desktop (2.05-1ubuntu5) bionic; urgency=medium
 
   * Add dependency on Conky config for keybindings. 
