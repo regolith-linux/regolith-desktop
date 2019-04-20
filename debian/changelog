@@ -1,3 +1,9 @@
+regolith-desktop (2.07-1ubuntu1) bionic; urgency=medium
+
+  * Add regolith-gdm3-theme. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 28 Mar 2019 21:51:06 -0700
+
 regolith-desktop (2.06-1ubuntu2) bionic; urgency=medium
 
   * Add unclutter-xfixes. 
