@@ -1,3 +1,9 @@
+regolith-desktop (2.09-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Add arm build. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Fri, 28 Jun 2019 21:23:49 -0700
+
 regolith-desktop (2.08-1ubuntu1) bionic; urgency=medium
 
   * Remove feh as relying on gnome for wallpaper. 

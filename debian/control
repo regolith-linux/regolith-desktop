@@ -8,10 +8,9 @@ Homepage: https://github.com/regolith-linux/regolith-desktop
 Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
 Package: regolith-desktop
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}, regolith-i3-wm, rofi, fonts-source-code-pro-ttf, compton, gnome-flashback, gnome-screensaver, solarc-theme, arc-icon-theme, moka-icon-theme, regolith-assets, regolith-compton-config, regolith-rofi-config, regolith-gnome-flashback, regolith-st, regolith-i3blocks, regolith-conky-config, unclutter-xfixes, regolith-gdm3-theme
 Multi-Arch: foreign
 Description: Regolith Desktop
  This package provides dependencies on top of Ubuntu to install the Regolith
  Desktop Environment.
-
