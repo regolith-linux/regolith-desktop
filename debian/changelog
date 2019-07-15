@@ -1,3 +1,9 @@
+regolith-desktop (2.10-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Swap i3xrocks from i3blocks. Add xrescat and regolith-styles. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 14 Jul 2019 17:50:38 -0700
+
 regolith-desktop (2.09-1ubuntu1ppa1) bionic; urgency=medium
 
   * Add arm build. 
