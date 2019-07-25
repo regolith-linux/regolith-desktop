@@ -31,7 +31,8 @@ Depends: ${misc:Depends},
     regolith-styles, 
     xrescat,
     i3xrocks,
-    regolith-i3xrocks-config
+    regolith-i3xrocks-config,
+    regolith-scripts
 Multi-Arch: foreign
 Description: Regolith Desktop
  This package provides dependencies on top of Ubuntu to install the Regolith

@@ -1,3 +1,9 @@
+regolith-desktop (2.24-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Add regolith-scripts. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 25 Jul 2019 07:13:41 -0700
+
 regolith-desktop (2.23-1ubuntu1ppa1) bionic; urgency=medium
 
   * Remove i3blocks. 
