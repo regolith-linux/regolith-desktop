@@ -1,4 +1,23 @@
-regolith-desktop (2.10-1ubuntu1ppa1) bionic; urgency=medium
+regolith-desktop (2.23-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Remove i3blocks. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 24 Jul 2019 21:17:34 -0700
+
+regolith-desktop (2.22-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Add i3xrocks and regolith-i3xrocks-config. Supports
+    https://github.com/regolith-linux/regolith-desktop/issues/24.
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Mon, 22 Jul 2019 08:03:11 -0700
+
+regolith-desktop (2.21-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Move back to i3blocks until regressions fixed, add fontawesome. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 14 Jul 2019 20:52:52 -0700
+
+regolith-desktop (2.20-1ubuntu1ppa1) bionic; urgency=medium
 
   * Swap i3xrocks from i3blocks. Add xrescat and regolith-styles. 
 
