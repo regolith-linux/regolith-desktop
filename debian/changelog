@@ -1,3 +1,10 @@
+regolith-desktop (2.25-1ubuntu1ppa1) disco; urgency=medium
+
+  * Deprecate regolith-scripts in support of
+    https://github.com/regolith-linux/regolith-desktop/issues/91. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Thu, 15 Aug 2019 07:47:09 -0700
+
 regolith-desktop (2.24-1ubuntu1ppa1) bionic; urgency=medium
 
   * Add regolith-scripts. 
