@@ -1,3 +1,10 @@
+regolith-desktop (2.26-1ubuntu1ppa1) disco; urgency=medium
+
+  * Remove regolith-gdm3-theme from package.  Fixes
+    https://github.com/regolith-linux/regolith-desktop/issues/92. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 20 Aug 2019 07:54:20 -0700
+
 regolith-desktop (2.25-1ubuntu1ppa1) disco; urgency=medium
 
   * Deprecate regolith-scripts in support of
@@ -35,6 +42,24 @@ regolith-desktop (2.20-1ubuntu1ppa1) bionic; urgency=medium
   * Swap i3xrocks from i3blocks. Add xrescat and regolith-styles. 
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 14 Jul 2019 17:50:38 -0700
+
+regolith-desktop (2.12-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Depend on xgetres for Xresources feature. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 03 Jul 2019 06:39:58 -0700
+
+regolith-desktop (2.11-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Depend on gnome-control-center. Fixes #57. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 03 Jul 2019 06:20:21 -0700
+
+regolith-desktop (2.10-1ubuntu1ppa1) bionic; urgency=medium
+
+  * Depend on regolith-styles. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 02 Jul 2019 21:45:23 -0700
 
 regolith-desktop (2.09-1ubuntu1ppa1) bionic; urgency=medium
 
