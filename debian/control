@@ -10,7 +10,8 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 Package: regolith-desktop
 Architecture: any
 Depends: ${misc:Depends}, 
-    regolith-i3-wm, 
+    i3-gaps-wm,
+    regolith-i3-gaps-config,
     rofi, 
     fonts-source-code-pro-ttf, 
     fonts-font-awesome, 
@@ -30,7 +31,9 @@ Depends: ${misc:Depends},
     regolith-styles, 
     xrescat,
     i3xrocks,
-    regolith-i3xrocks-config
+    regolith-i3xrocks-config,
+    xeventbind,
+    regolith-xeventbind
 Multi-Arch: foreign
 Description: Regolith Desktop
  This package provides dependencies on top of Ubuntu to install the Regolith

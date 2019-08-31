@@ -1,3 +1,16 @@
+regolith-desktop (2.28-1ubuntu1~ppa1) disco; urgency=medium
+
+  * Add xeventbind and xeventbind-regolith for wallpaper fix. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 28 Aug 2019 20:12:11 -0700
+
+regolith-desktop (2.27-1ubuntu1ppa1) disco; urgency=medium
+
+  * Migrate from regolith-i3 to regolith-i3-gaps-config and i3-gaps.
+    Fixes https://github.com/regolith-linux/regolith-desktop/issues/61. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 20 Aug 2019 21:24:54 -0700
+
 regolith-desktop (2.26-1ubuntu1ppa1) disco; urgency=medium
 
   * Remove regolith-gdm3-theme from package.  Fixes
