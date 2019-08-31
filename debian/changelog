@@ -1,3 +1,9 @@
+regolith-desktop (2.29-1ubuntu1~ppa1) disco; urgency=medium
+
+  * Ship GTK theme nordic by default. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sat, 31 Aug 2019 08:10:54 -0700
+
 regolith-desktop (2.28-1ubuntu1~ppa1) disco; urgency=medium
 
   * Add xeventbind and xeventbind-regolith for wallpaper fix. 
