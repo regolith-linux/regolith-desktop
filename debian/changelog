@@ -1,3 +1,9 @@
+regolith-desktop (2.30-1ubuntu1~ppa2) disco; urgency=medium
+
+  * Specify gnome dependencies required for Regolith. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 10 Sep 2019 19:57:58 -0700
+
 regolith-desktop (2.30-1ubuntu1~ppa1) disco; urgency=medium
 
   * Move from Moka to Paper icons. 
