@@ -1,0 +1,25 @@
+{
+    "packages": [
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/regolith-i3-gaps-config.git",
+            "packageName": "regolith-i3-gaps-config",
+            "buildPath": "",
+            "upstreamTarball": "",
+            "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/regolith-styles.git",
+            "packageName": "regolith-styles",
+            "buildPath": "",
+            "upstreamTarball": "",
+            "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/regolith-st.git",
+            "packageName": "regolith-st",
+            "buildPath": "",
+            "upstreamTarball": "https://dl.suckless.org/st/st-0.8.2.tar.gz",
+            "packageBranch": "debian"
+        }
+    ]
+}
