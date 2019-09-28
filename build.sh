@@ -2,12 +2,9 @@
 # This script can be used to generate Debian packages of Regolith in a user-specified PPA.
 # By doing this, anyone can create their own variants of the DE and/or distro.
 
-set -e
-
 # Input Parameters
 if [ "$#" -ne 3 ]; then
     echo "Usage: build.sh <package model> <user PPA> <build dir>"
-    echo "Must specify a package model file."
     exit 1
 fi
 
@@ -15,8 +12,14 @@ PACKAGE_MODEL_FILE=$( realpath $1 )
 PPA_URL=$2
 BUILD_DIR=$3
 
+print_banner() {
+    echo "***********************************************************"
+    echo "** $1"
+    echo "***********************************************************"
+}
+
 # Checkout
-function checkout {
+checkout() {
     repo_url=${packageModel[gitRepoUrl]}
     repo_path=${repo_url##*/}
     repo_name=${repo_path%%.*}
@@ -25,7 +28,7 @@ function checkout {
         return 0
     fi
 
-    figlet "Checking out ${packageModel[gitRepoUrl]}"
+    print_banner "Checking out ${packageModel[gitRepoUrl]}"
 
     cd $BUILD_DIR
     git clone ${packageModel[gitRepoUrl]} -b ${packageModel[packageBranch]}
@@ -33,8 +36,8 @@ function checkout {
 }
 
 # Package 
-function package {
-    figlet "Preparing source for ${packageModel[packageName]}"
+package() {
+    print_banner "Preparing source for ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
     debian_version=`dpkg-parsechangelog --show-field Version | cut -d'-' -f1`
     cd $BUILD_DIR
@@ -49,16 +52,16 @@ function package {
 }
 
 # Build
-function build {
-    figlet "Building ${packageModel[packageName]}"
+build() {
+    print_banner "Building ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
     debuild -S -sa
     cd $BUILD_DIR
 }
 
 # Publish
-function publish {
-    figlet "Publishing source package ${packageModel[packageName]}"
+publish() {
+    print_banner "Publishing source package ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
     version=`dpkg-parsechangelog --show-field Version`
     cd $BUILD_DIR
@@ -66,12 +69,20 @@ function publish {
     dput -f $PPA_URL ${packageModel[buildPath]}/../${packageModel[packageName]}\_$version\_source.changes
 }
 
+# Verify execution environment
+hash git 2>/dev/null || { echo >&2 "Required command git is not found on this system. Please install it. Aborting."; exit 1; }
+hash debuild 2>/dev/null || { echo >&2 "Required command debuild is not found on this system. Please install it. Aborting."; exit 1; }
+hash jq 2>/dev/null || { echo >&2 "Required command jq is not found on this system. Please install it. Aborting."; exit 1; }
+hash wget 2>/dev/null || { echo >&2 "Required command wget is not found on this system. Please install it. Aborting."; exit 1; }
+hash dpkg-parsechangelog 2>/dev/null || { echo >&2 "Required command dpkg-parsechangelog is not found on this system. Please install it. Aborting."; exit 1; }
+hash realpath 2>/dev/null || { echo >&2 "Required command realpath is not found on this system. Please install it. Aborting."; exit 1; }
+
 # Main
 if [ ! -d $BUILD_DIR ]; then
     mkdir -p $BUILD_DIR
 fi
 
-echo "Generating Regolith packages in $BUILD_DIR"
+print_banner "Generating Regolith packages in $BUILD_DIR"
 
 typeset -A packageModel
 cd $BUILD_DIR
@@ -87,4 +98,3 @@ jq -rc '.packages[]' | while IFS='' read package; do
     build 
     publish 
 done
-

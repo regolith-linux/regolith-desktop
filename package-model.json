@@ -111,6 +111,34 @@
             "buildPath": "speed-ricer/xeventbind",
             "upstreamTarball": "https://github.com/regolith-linux/xeventbind/archive/1.0.tar.gz",
             "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
+            "packageName": "fonts-source-code-pro-ttf",
+            "buildPath": "speed-ricer/fonts-source-code-pro-ttf",
+            "upstreamTarball": "https://github.com/adobe-fonts/source-code-pro/archive/variable-fonts.tar.gz",
+            "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
+            "packageName": "nordic",
+            "buildPath": "speed-ricer/nordic",
+            "upstreamTarball": "https://github.com/regolith-linux/Nordic/archive/nordic-regolith-1.0.tar.gz",
+            "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
+            "packageName": "unclutter-xfixes",
+            "buildPath": "speed-ricer/unclutter-xfixes",
+            "upstreamTarball": "https://github.com/Airblader/unclutter-xfixes/archive/v1.5.tar.gz",
+            "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
+            "packageName": "i3xrocks",
+            "buildPath": "speed-ricer/i3xrocks",
+            "upstreamTarball": "https://github.com/regolith-linux/i3xrocks/archive/regolith-1.0.tar.gz",
+            "packageBranch": "master"
         }
     ]
 }
