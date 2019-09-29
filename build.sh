@@ -78,11 +78,12 @@ hash dpkg-parsechangelog 2>/dev/null || { echo >&2 "Required command dpkg-parsec
 hash realpath 2>/dev/null || { echo >&2 "Required command realpath is not found on this system. Please install it. Aborting."; exit 1; }
 
 # Main
+set -e
 if [ ! -d $BUILD_DIR ]; then
     mkdir -p $BUILD_DIR
 fi
 
-print_banner "Generating Regolith packages in $BUILD_DIR"
+print_banner "Generating packages in $BUILD_DIR"
 
 typeset -A packageModel
 cd $BUILD_DIR
