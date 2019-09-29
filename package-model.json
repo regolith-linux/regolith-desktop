@@ -132,13 +132,6 @@
             "buildPath": "speed-ricer/unclutter-xfixes",
             "upstreamTarball": "https://github.com/Airblader/unclutter-xfixes/archive/v1.5.tar.gz",
             "packageBranch": "master"
-        },
-        {
-            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
-            "packageName": "i3xrocks",
-            "buildPath": "speed-ricer/i3xrocks",
-            "upstreamTarball": "https://github.com/regolith-linux/i3xrocks/archive/regolith-1.0.tar.gz",
-            "packageBranch": "master"
         }
     ]
 }
