@@ -4,7 +4,7 @@
             "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
             "packageName": "compton",
             "buildPath": "speed-ricer/compton",
-            "upstreamTarball": "https://github.com/yshui/compton/archive/v7.3.tar.gz",
+            "upstreamTarball": "https://github.com/yshui/compton/archive/v7.4.tar.gz",
             "packageBranch": "master"
         },
         {
