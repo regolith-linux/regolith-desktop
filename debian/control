@@ -31,12 +31,10 @@ Depends: ${misc:Depends},
     regolith-rofi-config, 
     regolith-st, 
     regolith-styles, 
-    regolith-xeventbind,
-    rofi, 
+    rofi,
     software-properties-gtk,
     unclutter-xfixes, 
     update-manager,
-    xeventbind,
     xrescat
 Multi-Arch: foreign
 Description: Regolith Desktop

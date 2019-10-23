@@ -1,3 +1,9 @@
+regolith-desktop (2.30-1ubuntu1~ppa3) eoan; urgency=medium
+
+  * Remove xeventbind and xeventbind-regolith from dependencies. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 22 Oct 2019 20:27:41 -0700
+
 regolith-desktop (2.30-1ubuntu1~ppa2) disco; urgency=medium
 
   * Specify gnome dependencies required for Regolith. 
