@@ -9,8 +9,7 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
 Package: regolith-desktop
 Architecture: any
-Depends: ${misc:Depends}, 
-    compton, 
+Depends: ${misc:Depends},  
     fonts-font-awesome, 
     fonts-source-code-pro-ttf, 
     gnome-control-center,
@@ -22,8 +21,8 @@ Depends: ${misc:Depends},
     nautilus,
     nordic,
     paper-icon-theme,
-    regolith-assets, 
-    regolith-compton-config, 
+    regolith-assets,
+    regolith-compositor,
     regolith-conky-config, 
     regolith-gnome-flashback, 
     regolith-i3-gaps-config,
