@@ -24,14 +24,16 @@ checkout() {
     repo_path=${repo_url##*/}
     repo_name=${repo_path%%.*}
     if [ -d $BUILD_DIR/$repo_name ]; then
-        echo "Skipping checkout, $repo_name already exists."
-        return 0
+        echo "Skipping clone, $repo_name already exists."
+        cd $BUILD_DIR/$repo_name
+        git pull
+        git checkout ${packageModel[packageBranch]}
+    else
+        print_banner "Checking out ${packageModel[gitRepoUrl]}"
+
+        cd $BUILD_DIR
+        git clone ${packageModel[gitRepoUrl]} -b ${packageModel[packageBranch]}
     fi
-
-    print_banner "Checking out ${packageModel[gitRepoUrl]}"
-
-    cd $BUILD_DIR
-    git clone ${packageModel[gitRepoUrl]} -b ${packageModel[packageBranch]}
     cd -
 }
 
