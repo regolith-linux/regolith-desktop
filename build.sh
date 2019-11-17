@@ -40,14 +40,24 @@ package() {
     print_banner "Preparing source for ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
     debian_version=`dpkg-parsechangelog --show-field Version | cut -d'-' -f1`
+    full_version=`dpkg-parsechangelog --show-field Version`
     cd $BUILD_DIR
 
-    if [ "${packageModel[upstreamTarball]}" != "" ]; then
-        echo "Downloading source from ${packageModel[upstreamTarball]}..."
-        wget ${packageModel[upstreamTarball]} -O ${packageModel[buildPath]}/../${packageModel[packageName]}\_$debian_version.orig.tar.gz
-    else
-        echo "Generating source tarball from git repo."
-        tar cfzv ${packageModel[packageName]}\_$debian_version.orig.tar.gz --exclude .git\* --exclude debian ${packageModel[buildPath]}/../${packageModel[packageName]}
+    echo "Checking if ${packageModel[packageName]} $full_version is in the repo..."
+    url="https://launchpad.net/~$PPA_USER/+archive/ubuntu/$PPA_NAME/+sourcefiles/${packageModel[packageName]}/$full_version/${packageModel[packageName]}_$full_version.dsc"
+
+    if curl --output /dev/null --silent --head --fail "$url"; then
+        echo "** Ignoring ${packageModel[packageName]}-$full_version, already exists in target PPA."
+        package_exists="true"    
+    else 
+        if [ "${packageModel[upstreamTarball]}" != "" ]; then
+            echo "Downloading source from ${packageModel[upstreamTarball]}..."
+            wget ${packageModel[upstreamTarball]} -O ${packageModel[buildPath]}/../${packageModel[packageName]}\_$debian_version.orig.tar.gz
+        else
+            echo "Generating source tarball from git repo."
+            tar cfzv ${packageModel[packageName]}\_$debian_version.orig.tar.gz --exclude .git\* --exclude debian ${packageModel[buildPath]}/../${packageModel[packageName]}
+        fi
+        package_exists="false"
     fi
 }
 
@@ -55,7 +65,7 @@ package() {
 build() {
     print_banner "Building ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
-    debuild -S -sa
+    echo debuild -S -sa
     cd $BUILD_DIR
 }
 
@@ -66,7 +76,7 @@ publish() {
     version=`dpkg-parsechangelog --show-field Version`
     cd $BUILD_DIR
 
-    dput -f $PPA_URL ${packageModel[buildPath]}/../${packageModel[packageName]}\_$version\_source.changes
+    echo dput -f $PPA_URL ${packageModel[buildPath]}/../${packageModel[packageName]}\_$version\_source.changes
 }
 
 # Verify execution environment
@@ -76,12 +86,17 @@ hash jq 2>/dev/null || { echo >&2 "Required command jq is not found on this syst
 hash wget 2>/dev/null || { echo >&2 "Required command wget is not found on this system. Please install it. Aborting."; exit 1; }
 hash dpkg-parsechangelog 2>/dev/null || { echo >&2 "Required command dpkg-parsechangelog is not found on this system. Please install it. Aborting."; exit 1; }
 hash realpath 2>/dev/null || { echo >&2 "Required command realpath is not found on this system. Please install it. Aborting."; exit 1; }
+hash curl 2>/dev/null || { echo >&2 "Required command curl is not found on this system. Please install it. Aborting."; exit 1; }
 
 # Main
 set -e
 if [ ! -d $BUILD_DIR ]; then
     mkdir -p $BUILD_DIR
 fi
+
+TEMP1="$(echo $PPA_URL | cut -d':' -f2)"
+PPA_USER="$(echo $TEMP1 | cut -d'/' -f1)"
+PPA_NAME="$(echo $TEMP1 | cut -d'/' -f2)"
 
 print_banner "Generating packages in $BUILD_DIR"
 
@@ -94,8 +109,11 @@ jq -rc '.packages[]' | while IFS='' read package; do
         packageModel["$key"]="$value"
     done < <( echo $package | jq -r 'to_entries | .[] | .key + "=" + .value')
 
-    checkout 
-    package 
-    build 
-    publish 
+    checkout
+    package_exists="false"
+    package
+    if [ "$package_exists" == "false" ]; then
+      build 
+      publish 
+    fi
 done
