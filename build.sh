@@ -65,7 +65,7 @@ package() {
 build() {
     print_banner "Building ${packageModel[packageName]}"
     cd $BUILD_DIR/${packageModel[buildPath]}
-    echo debuild -S -sa
+    debuild -S -sa
     cd $BUILD_DIR
 }
 
@@ -76,7 +76,7 @@ publish() {
     version=`dpkg-parsechangelog --show-field Version`
     cd $BUILD_DIR
 
-    echo dput -f $PPA_URL ${packageModel[buildPath]}/../${packageModel[packageName]}\_$version\_source.changes
+    dput -f $PPA_URL ${packageModel[buildPath]}/../${packageModel[packageName]}\_$version\_source.changes
 }
 
 # Verify execution environment
