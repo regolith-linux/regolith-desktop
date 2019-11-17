@@ -1,4 +1,4 @@
-regolith-desktop (2.40-1ubuntu1~ppa1) eoan; urgency=medium
+regolith-desktop (2.41-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Move to virtual package for compositor, default to compton-glx. 
 
