@@ -33,7 +33,7 @@
             "packageName": "regolith-i3xrocks-config",
             "buildPath": "regolith-i3xrocks-config",
             "upstreamTarball": "",
-            "packageBranch": "master"
+            "packageBranch": "aarch64"
         },
         {
             "gitRepoUrl": "https://github.com/regolith-linux/regolith-gnome-flashback.git",
@@ -47,7 +47,7 @@
             "packageName": "regolith-desktop",
             "buildPath": "regolith-desktop",
             "upstreamTarball": "",
-            "packageBranch": "disco"
+            "packageBranch": "aarch64"
         },
         {
             "gitRepoUrl": "https://github.com/regolith-linux/regolith-gdm3-theme.git",
