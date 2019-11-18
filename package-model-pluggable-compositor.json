@@ -40,7 +40,7 @@
             "packageName": "regolith-gnome-flashback",
             "buildPath": "regolith-gnome-flashback",
             "upstreamTarball": "",
-            "packageBranch": "disco"
+            "packageBranch": "master"
         },
         {
             "gitRepoUrl": "https://github.com/regolith-linux/regolith-desktop.git",
