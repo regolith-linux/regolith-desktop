@@ -12,7 +12,7 @@
             "packageName": "regolith-i3-gaps-config",
             "buildPath": "regolith-i3-gaps-config",
             "upstreamTarball": "",
-            "packageBranch": "master"
+            "packageBranch": "pluggable-compositor"
         },
         {
             "gitRepoUrl": "https://github.com/regolith-linux/regolith-styles.git",
