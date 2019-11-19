@@ -118,6 +118,13 @@
             "buildPath": "speed-ricer/unclutter-xfixes",
             "upstreamTarball": "https://github.com/Airblader/unclutter-xfixes/archive/v1.5.tar.gz",
             "packageBranch": "master"
+        },
+        {
+            "gitRepoUrl": "https://github.com/regolith-linux/speed-ricer.git",
+            "packageName": "i3-gaps-wm",
+            "buildPath": "speed-ricer/i3-gaps",
+            "upstreamTarball": "https://launchpad.net/~kgilmer/+archive/ubuntu/speed-ricer/+sourcefiles/i3-gaps-wm/4.17.1~1ubuntu1~ppa3/i3-gaps-wm_4.17.1~1ubuntu1~ppa3.tar.gz",
+            "packageBranch": "master"
         }
     ]
 }
