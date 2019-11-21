@@ -3,14 +3,18 @@
 # By doing this, anyone can create their own variants of the DE and/or distro.
 
 # Input Parameters
-if [ "$#" -ne 3 ]; then
-    echo "Usage: build.sh <package model> <user PPA> <build dir>"
+if [ "$#" -lt 3 ]; then
+    echo "This script builds Debian packages.  It uses a package model file that describes each package."
+    echo "Each package is checked out of a git repo, source is downloaded, built, and then deployed to a PPA."
+    echo "If no package name is specified from the model, all packages are built."
+    echo "Usage: build.sh <package model> <user PPA> <build dir> [package]"
     exit 1
 fi
 
 PACKAGE_MODEL_FILE=$( realpath $1 )
 PPA_URL=$2
 BUILD_DIR=$3
+PACKAGE=$4
 
 print_banner() {
     echo "***********************************************************"
@@ -110,6 +114,10 @@ jq -rc '.packages[]' | while IFS='' read package; do
     while IFS== read -r key value; do
         packageModel["$key"]="$value"
     done < <( echo $package | jq -r 'to_entries | .[] | .key + "=" + .value')
+
+    if [[ ! -z "$PACKAGE" && "$PACKAGE" != "${packageModel[packageName]}" ]]; then
+        continue
+    fi
 
     checkout
     package_exists="false"
