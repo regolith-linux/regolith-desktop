@@ -1,3 +1,11 @@
+regolith-desktop (2.42-1ubuntu1~ppa1) eoan; urgency=medium
+
+  * Move to virtual package for looks.
+  * Remove thematic dependencies as have been pushed down.
+  * Version bump
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 11 Dec 2019 21:26:08 -0800
+
 regolith-desktop (2.41-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Move to virtual package for compositor, default to compton-glx. 
