@@ -1,3 +1,9 @@
+regolith-desktop (2.42-1ubuntu1~ppa2) eoan; urgency=medium
+
+  * Add i3-snapshot as a required package 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 15 Dec 2019 16:21:06 -0800
+
 regolith-desktop (2.42-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Move to virtual package for looks.
