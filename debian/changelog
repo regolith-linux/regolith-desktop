@@ -1,4 +1,4 @@
-regolith-desktop (2.42-1ubuntu1~ppa2) eoan; urgency=medium
+regolith-desktop (2.43-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Add i3-snapshot as a required package 
 
