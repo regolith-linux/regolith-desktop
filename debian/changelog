@@ -1,3 +1,16 @@
+regolith-desktop (2.44-1ubuntu1~ppa2) eoan; urgency=medium
+
+  * Remove unnecessary dependency on remontoire. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 24 Dec 2019 21:25:36 -0800
+
+regolith-desktop (2.44-1ubuntu1~ppa1) eoan; urgency=medium
+
+  * Switch from Conky to Remontoire for shortcuts.
+  * Fix default look package name. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Tue, 24 Dec 2019 20:39:04 -0800
+
 regolith-desktop (2.43-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Add i3-snapshot as a required package 
