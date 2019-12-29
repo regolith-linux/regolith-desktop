@@ -1,3 +1,16 @@
+regolith-desktop (2.45-1ubuntu1~ppa1) eoan; urgency=medium
+
+  * Remove regolith-assets, deprecated by regolith-look-*
+  * Default to R1.3 look; cahuella. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Sun, 29 Dec 2019 14:23:27 -0800
+
+regolith-desktop (2.44-1ubuntu1~ppa3) eoan; urgency=medium
+
+  * Add gnome-screensaver back as a dependency, it's needed for lockscreen. 
+
+ -- Ken Gilmer <kgilmer@gmail.com>  Wed, 25 Dec 2019 19:13:35 -0800
+
 regolith-desktop (2.44-1ubuntu1~ppa2) eoan; urgency=medium
 
   * Remove unnecessary dependency on remontoire. 
