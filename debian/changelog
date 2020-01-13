@@ -1,3 +1,9 @@
+regolith-desktop (2.46-1ubuntu1~ppa2) eoan; urgency=medium
+
+  * Migrate to new PPA. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 12 Jan 2020 18:05:40 -0800
+
 regolith-desktop (2.46-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Remove deprecated regolith-rofi-config. 
