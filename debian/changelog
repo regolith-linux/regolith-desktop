@@ -1,3 +1,9 @@
+regolith-desktop (2.48-1ubuntu1~ppa1) eoan; urgency=medium
+
+  * Require package regolith-look (bug fix). 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 04 Feb 2020 19:12:48 -0800
+
 regolith-desktop (2.47-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Migrate to new PPA. 
