@@ -1,3 +1,9 @@
+regolith-desktop (2.49-1ubuntu1~ppa1) eoan; urgency=medium
+
+  * Version bump to appease package builder in lieu of rollback. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 11 Feb 2020 13:22:09 -0800
+
 regolith-desktop (2.47-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Migrate to new PPA. 
