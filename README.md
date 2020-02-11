@@ -44,3 +44,33 @@ dput ppa://<username>/<ppa name> ../regolith-desktop_2.07-1ubuntu1_source.change
 ## Verification
 
 After uploading the package to your PPA, you should get an email from Launchpad.net regarding if the package was accepted or rejected.  Then, some time later the package should have been build and available for installation.  Assuming you have already added your PPA via `add-apt-repository`, `sudo apt update` and `sudo apt upgrade` should cause the new package to be installed on your local system.
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/regolith-linux/regolith-desktop/graphs/contributors"><img src="https://opencollective.com/regolith/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/regolith/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/regolith"><img src="https://opencollective.com/regolith/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/regolith/contribute)]
+
+<a href="https://opencollective.com/regolith/organization/0/website"><img src="https://opencollective.com/regolith/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/1/website"><img src="https://opencollective.com/regolith/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/2/website"><img src="https://opencollective.com/regolith/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/3/website"><img src="https://opencollective.com/regolith/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/4/website"><img src="https://opencollective.com/regolith/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/5/website"><img src="https://opencollective.com/regolith/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/6/website"><img src="https://opencollective.com/regolith/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/7/website"><img src="https://opencollective.com/regolith/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/8/website"><img src="https://opencollective.com/regolith/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/regolith/organization/9/website"><img src="https://opencollective.com/regolith/organization/9/avatar.svg"></a>
