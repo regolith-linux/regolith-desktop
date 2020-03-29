@@ -1,3 +1,9 @@
+regolith-desktop (2.50) eoan; urgency=medium
+
+  * Add file to track DE version on filesystem for support. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 29 Mar 2020 10:30:59 -0700
+
 regolith-desktop (2.49-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Version bump to appease package builder in lieu of rollback. 
