@@ -1,3 +1,9 @@
+regolith-desktop (2.52) eoan; urgency=medium
+
+  * Integrate rofication and rofi file search. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 01 Apr 2020 11:54:08 -0700
+
 regolith-desktop (2.51) eoan; urgency=medium
 
   * Move version info into regolith etc dir for less clutter.
