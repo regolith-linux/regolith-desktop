@@ -1,3 +1,10 @@
+regolith-desktop (2.53) eoan; urgency=medium
+
+  * Express look dependency on virtual package.
+  * Use ayu-mirage-regolith as default look. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 03 Apr 2020 10:37:33 -0700
+
 regolith-desktop (2.52) eoan; urgency=medium
 
   * Integrate rofication and rofi file search. 
