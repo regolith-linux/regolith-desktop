@@ -1,3 +1,9 @@
+regolith-desktop (2.54-1) eoan; urgency=medium
+
+  * Migrate from st-term to gnome-terminal. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Thu, 16 Apr 2020 22:03:08 -0700
+
 regolith-desktop (2.53) eoan; urgency=medium
 
   * Express look dependency on virtual package.
