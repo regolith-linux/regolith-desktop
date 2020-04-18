@@ -19,19 +19,19 @@ Depends: ${misc:Depends},
     i3xrocks,
     nautilus,
     regolith-compositor-compton-glx | regolith-compositor,
+    regolith-ftue,
     regolith-gnome-flashback,
     regolith-i3-gaps-config,
     regolith-i3xrocks-config,
     regolith-look-ayu-mirage | regolith-look,
     regolith-rofi-config,
     regolith-rofication | notification-daemon,
-    gnome-terminal,
     regolith-styles,
     rofi,
     software-properties-gtk,
-    unclutter-xfixes,
-    update-manager,
+    unclutter-xfixes,    
     xrescat
+Suggests: update-manager
 Multi-Arch: foreign
 Description: Regolith Desktop
  This package provides dependencies on top of Ubuntu to install the Regolith

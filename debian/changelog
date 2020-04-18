@@ -1,3 +1,10 @@
+regolith-desktop (2.55-1) eoan; urgency=medium
+
+  * Add top-level dep on regolith-ftue for clarity of intention.
+  * Remove direct dependency on update-manager as can work without. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 17 Apr 2020 19:28:29 -0700
+
 regolith-desktop (2.54-1) eoan; urgency=medium
 
   * Migrate from st-term to gnome-terminal. 
