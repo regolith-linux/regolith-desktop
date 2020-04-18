@@ -9,7 +9,8 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
 Package: regolith-desktop
 Architecture: any
-Depends: ${misc:Depends},
+Depends: 
+    ${misc:Depends},
     gnome-control-center,
     gnome-flashback,
     gnome-screensaver,
@@ -23,15 +24,16 @@ Depends: ${misc:Depends},
     regolith-gnome-flashback,
     regolith-i3-gaps-config,
     regolith-i3xrocks-config,
-    regolith-look-ayu-mirage | regolith-look,
+    regolith-look-lascaille | regolith-look,
     regolith-rofi-config,
     regolith-rofication | notification-daemon,
     regolith-styles,
     rofi,
-    software-properties-gtk,
     unclutter-xfixes,    
     xrescat
-Suggests: update-manager
+Suggests: 
+    update-manager,
+    software-properties-gtk
 Multi-Arch: foreign
 Description: Regolith Desktop
  This package provides dependencies on top of Ubuntu to install the Regolith

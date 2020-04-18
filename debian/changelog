@@ -1,3 +1,10 @@
+regolith-desktop (2.56-1) eoan; urgency=medium
+
+  * Remove direct dependency on software-properties-gtk.
+  * Depend on correct look for 1.4. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 18 Apr 2020 11:01:12 -0700
+
 regolith-desktop (2.55-1) eoan; urgency=medium
 
   * Add top-level dep on regolith-ftue for clarity of intention.
