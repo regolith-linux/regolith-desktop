@@ -1,4 +1,4 @@
-regolith-desktop (2.58-1eoan1) eoan; urgency=medium
+regolith-desktop (2.58-1bionic1) bionic; urgency=medium
 
   * Keep gnome-screensaver for pre focal releases.
 
