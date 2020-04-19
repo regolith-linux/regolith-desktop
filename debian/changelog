@@ -1,3 +1,9 @@
+regolith-desktop (2.58-1focal1) focal; urgency=medium
+
+  * Break package based on Ubuntu version.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 18 Apr 2020 20:58:34 -0700
+
 regolith-desktop (2.57-1) eoan; urgency=medium
 
   * Remove depency on gnome-screensaver for 20.04. 
