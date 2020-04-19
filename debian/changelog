@@ -1,3 +1,9 @@
+regolith-desktop (2.57-1) eoan; urgency=medium
+
+  * Remove depency on gnome-screensaver for 20.04. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 18 Apr 2020 20:29:16 -0700
+
 regolith-desktop (2.56-1) eoan; urgency=medium
 
   * Remove direct dependency on software-properties-gtk.

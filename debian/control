@@ -13,7 +13,6 @@ Depends:
     ${misc:Depends},
     gnome-control-center,
     gnome-flashback,
-    gnome-screensaver,
     gnome-settings-daemon,
     i3-gaps-wm,
     i3-snapshot,
