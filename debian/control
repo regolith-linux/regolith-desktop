@@ -17,6 +17,7 @@ Depends:
     i3-gaps-wm,
     i3-snapshot,
     i3xrocks,
+    libmutter-6-0,
     nautilus,
     regolith-compositor-compton-glx | regolith-compositor,
     regolith-ftue,
