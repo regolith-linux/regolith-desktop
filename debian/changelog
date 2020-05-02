@@ -1,3 +1,9 @@
+regolith-desktop (2.59-1eoan1) eoan; urgency=medium
+
+  * Bump version file for R1.4.1 release.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 02 May 2020 16:34:50 -0700
+
 regolith-desktop (2.58-1eoan1) eoan; urgency=medium
 
   * Keep gnome-screensaver for pre focal releases.
