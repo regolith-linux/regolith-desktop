@@ -1,6 +1,6 @@
-regolith-desktop (2.62-1focal1) focal; urgency=medium
+regolith-desktop (2.63-1focal1) focal; urgency=medium
 
-  * Change version string to 1.4.0.1 to denote fix only release. 
+  * Revert version string to 1.4.1.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sun, 03 May 2020 10:26:02 -0700
 
