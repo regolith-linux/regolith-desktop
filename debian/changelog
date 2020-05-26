@@ -1,3 +1,9 @@
+regolith-desktop (2.64-1focal1) focal; urgency=medium
+
+  * Package: Remove unclutter-startup, if installed 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 26 May 2020 08:11:37 -0700
+
 regolith-desktop (2.63-1focal1) focal; urgency=medium
 
   * Revert version string to 1.4.1.
