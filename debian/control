@@ -9,7 +9,8 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
 Package: regolith-desktop
 Architecture: any
-Depends: 
+Conflicts: unclutter-startup
+Depends:
     ${misc:Depends},
     gnome-control-center,
     gnome-flashback,
@@ -29,9 +30,9 @@ Depends:
     regolith-rofication | notification-daemon,
     regolith-styles,
     rofi,
-    unclutter-xfixes,    
+    unclutter-xfixes,
     xrescat
-Suggests: 
+Suggests:
     update-manager,
     software-properties-gtk
 Multi-Arch: foreign
