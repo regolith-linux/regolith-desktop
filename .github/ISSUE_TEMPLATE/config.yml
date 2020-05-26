@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Regolith Documentation
+    url: https://regolith-linux.org/docs/
+    about: The Regolith documentation has answers to a lot questions, especially about customization. Please read it before opening an issue.
+  - name: Regolith Slack
+    url: https://regolith-linux.herokuapp.com/
+    about: The Regolith Slack lets you connect with fellow users and the developers. Use it to ask questions and suggest features.
