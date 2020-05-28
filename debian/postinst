@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -Eeu -o pipefail
-
-apt purge -q=3 unclutter-startup
