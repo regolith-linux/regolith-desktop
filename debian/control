@@ -36,6 +36,6 @@ Suggests:
     update-manager,
     software-properties-gtk
 Multi-Arch: foreign
-Description: Regolith Desktop
- This package provides dependencies on top of Ubuntu to install the Regolith
- Desktop Environment.
+Description: metapackage for Regolith desktop environment
+ This package contains all the packages necessary for the 
+ desktop environment to function.
