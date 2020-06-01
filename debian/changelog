@@ -1,4 +1,4 @@
-regolith-desktop (2.61-1bionic1) bionic; urgency=medium
+regolith-desktop (2.68-1bionic1) bionic; urgency=medium
 
   * Package: Remove postinst to unblock upgrades (#432) 
 
