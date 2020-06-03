@@ -1,3 +1,10 @@
+regolith-desktop (2.70-1focal1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Version bump to appease launchpad. 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 03 Jun 2020 07:59:50 -0700
+
 regolith-desktop (2.67-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]
