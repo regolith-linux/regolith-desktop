@@ -21,6 +21,7 @@ Depends:
     i3xrocks,
     nautilus,
     regolith-compositor-compton-glx | regolith-compositor,
+    regolith-default-settings,
     regolith-ftue,
     regolith-gnome-flashback,
     regolith-i3-gaps-config,
