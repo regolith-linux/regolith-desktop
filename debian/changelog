@@ -1,9 +1,16 @@
+regolith-desktop (2.67-1focal1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Depend on regolith-default-settings to migrate to gsettings overrides.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 03 Jun 2020 07:39:20 -0700
+
 regolith-desktop (2.66-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]
   * Add gbp config file.
 
- -- Regolith Linux <regolith.linux@gmail.com>  Sun, 31 May 2020 13:33:46 -0700
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 03 Jun 2020 07:38:34 -0700
 
 regolith-desktop (2.65-1focal1) focal; urgency=medium
 
