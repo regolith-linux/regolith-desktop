@@ -1,7 +1,8 @@
-regolith-desktop (2.70-1eoan1) eoan; urgency=medium
+regolith-desktop (2.73-1eoan1) eoan; urgency=medium
 
   [ Ken Gilmer ]
   * Depend on regolith-default-settings to migrate to gsettings overrides.
+  * Update branch name to conform w/ gbp.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Wed, 03 Jun 2020 07:48:05 -0700
 
