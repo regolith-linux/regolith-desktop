@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 - [ ] I've [run a search on the existing bug reports](https://help.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests) to make sure I'm not filing a duplicate (you can use the search box at the top left corner)
-- [ ] I've read [the Regolith documentation](https://regolith-linux.org/docs/https://regolith-linux.org/docs/) and didn't find any relevant topic
+- [ ] I've read [the Regolith documentation](https://regolith-linux.org/docs/) and didn't find any relevant topic
 - [ ] I tried [asking on Slack](https://regolith-linux.org/interact/) (especially for configuration related issues)
 
 **Describe the bug**
