@@ -1,3 +1,10 @@
+regolith-desktop (2.72-1bionic1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Version bump for next DE release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 22 Aug 2020 18:50:44 -0700
+
 regolith-desktop (2.71-1bionic1) bionic; urgency=medium
 
   [ Ken Gilmer ]
