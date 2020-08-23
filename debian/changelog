@@ -1,3 +1,10 @@
+regolith-desktop (2.71-1focal1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Version bump for next DE release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 22 Aug 2020 18:46:58 -0700
+
 regolith-desktop (2.70-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]
