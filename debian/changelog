@@ -1,3 +1,10 @@
+regolith-desktop (2.74-1focal1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Change unclutter to regolith-unclutter-fixes to address https://github.com/regolith-linux/speed-ricer/issues/14.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 05 Sep 2020 14:15:52 -0700
+
 regolith-desktop (2.71-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]
