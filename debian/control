@@ -30,8 +30,8 @@ Depends:
     regolith-rofi-config,
     regolith-rofication | notification-daemon,
     regolith-styles,
-    rofi,
-    unclutter-xfixes,
+    regolith-unclutter-xfixes,
+    rofi,    
     xrescat
 Suggests:
     update-manager,
