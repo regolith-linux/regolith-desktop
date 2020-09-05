@@ -1,4 +1,4 @@
-regolith-desktop (2.73-1bionic) bionic; urgency=medium
+regolith-desktop (2.75-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
   * Change unclutter to regolith-unclutter-fixes to address https://github.com/regolith-linux/speed-ricer/issues/14.
