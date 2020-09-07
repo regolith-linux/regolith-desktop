@@ -1,3 +1,10 @@
+regolith-desktop (2.76-1focal) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Move from compton to picom as default compositor.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 07 Sep 2020 13:59:53 -0700
+
 regolith-desktop (2.74-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]

@@ -20,7 +20,7 @@ Depends:
     i3xrocks,
     mutter-common,
     nautilus,
-    regolith-compositor-compton-glx | regolith-compositor,
+    regolith-compositor-picom-glx | regolith-compositor,
     regolith-default-settings,
     regolith-ftue,
     regolith-gnome-flashback,
