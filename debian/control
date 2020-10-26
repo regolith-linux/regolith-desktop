@@ -115,7 +115,7 @@ Depends:
     gnome-flashback,
     gnome-settings-daemon,
     i3-gaps-wm,
-    i3xrocks-battery
+    i3xrocks-battery,
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
     i3xrocks-time,

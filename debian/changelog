@@ -1,4 +1,4 @@
-regolith-desktop (2.77-1groovy) groovy; urgency=medium
+regolith-desktop (2.78-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
   * Add meta packages for various customer use cases: minimal, standard, mobile.  Fixes https://github.com/regolith-linux/regolith-desktop/issues/482.
