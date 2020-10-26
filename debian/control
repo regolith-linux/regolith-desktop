@@ -106,7 +106,7 @@ Description: metapackage for minimal Regolith desktop environment
  This package contains minimal packages for functional desktop.
  Some functionality may not work due to missing dependencies.
 
- Package: regolith-desktop-mobile
+Package: regolith-desktop-mobile
 Architecture: any
 Conflicts: unclutter-startup
 Depends:
