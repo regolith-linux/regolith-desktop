@@ -1,3 +1,10 @@
+regolith-desktop (2.80-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add metapackage regolith-desktop-complete that includes all status indicators and looks.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 31 Oct 2020 09:13:56 -0700
+
 regolith-desktop (2.79-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
