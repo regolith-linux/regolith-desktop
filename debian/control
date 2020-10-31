@@ -199,6 +199,6 @@ Suggests:
     update-manager,
     software-properties-gtk
 Multi-Arch: foreign
-Description: metapackage for minimal Regolith desktop environment
- This package contains minimal packages for functional desktop.
- Some functionality may not work due to missing dependencies.
+Description: metapackage for maximal Regolith desktop environment
+ This package contains all packages available in the Regolith
+ package archive.

@@ -1,3 +1,10 @@
+regolith-desktop (2.81-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix new package description
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 31 Oct 2020 09:18:32 -0700
+
 regolith-desktop (2.80-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
