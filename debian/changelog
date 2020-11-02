@@ -1,3 +1,10 @@
+regolith-desktop (2.82-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove invalid package from new metapackage.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 01 Nov 2020 21:40:47 -0800
+
 regolith-desktop (2.81-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
