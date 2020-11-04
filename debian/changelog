@@ -1,3 +1,9 @@
+regolith-desktop (2.85-1groovy) groovy; urgency=medium
+
+  * Add i3xrocks-next-workspace as dependency to desktop packages.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 03 Nov 2020 22:13:24 -0800
+
 regolith-desktop (2.82-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
