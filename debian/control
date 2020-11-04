@@ -19,6 +19,7 @@ Depends:
     i3-gaps-wm,
     i3-snapshot,
     i3xrocks,
+    i3xrocks-next-workspace,
     nautilus,
     regolith-compositor-picom-glx | regolith-compositor,
     regolith-default-settings,
@@ -31,7 +32,7 @@ Depends:
     regolith-rofication | notification-daemon,
     regolith-styles,
     regolith-unclutter-xfixes,
-    rofi,    
+    rofi,
     xrescat
 Suggests:
     update-manager,
@@ -41,3 +42,166 @@ Description: metapackage for Regolith desktop environment
  This package contains all the packages necessary for the 
  desktop environment to function.
 
+Package: regolith-desktop-minimal
+Architecture: any
+Conflicts: unclutter-startup
+Depends:
+    ${misc:Depends},
+    gnome-control-center,
+    gnome-flashback,
+    gnome-screensaver,
+    gnome-settings-daemon,
+    i3-gaps-wm,
+    i3xrocks,    
+    regolith-compositor-none | regolith-compositor,
+    regolith-default-settings,
+    regolith-ftue,
+    regolith-gnome-flashback,
+    regolith-i3-gaps-config,
+    regolith-i3xrocks-config,
+    regolith-look-lascaille | regolith-look,
+    regolith-rofi-config,
+    regolith-styles,
+    regolith-unclutter-xfixes,
+    rofi,
+    xrescat
+Suggests:
+    update-manager,
+    software-properties-gtk
+Multi-Arch: foreign
+Description: metapackage for minimal Regolith desktop environment
+ This package contains minimal packages for functional desktop.
+ Some functionality may not work due to missing dependencies.
+
+Package: regolith-desktop-standard
+Architecture: any
+Conflicts: unclutter-startup
+Depends:
+    ${misc:Depends},
+    gnome-control-center,
+    gnome-flashback,
+    gnome-screensaver,
+    gnome-settings-daemon,
+    i3-gaps-wm,
+    i3xrocks-cpu-usage,
+    i3xrocks-net-traffic,
+    i3xrocks-next-workspace,
+    i3xrocks-time,
+    i3xrocks,
+    regolith-compositor-picom-glx | regolith-compositor,
+    regolith-default-settings,
+    regolith-ftue,
+    regolith-gnome-flashback,
+    regolith-i3-gaps-config,
+    regolith-i3xrocks-config,
+    regolith-look-lascaille | regolith-look,
+    regolith-rofi-config,
+    regolith-styles,
+    regolith-unclutter-xfixes,
+    rofi,
+    xrescat
+Suggests:
+    update-manager,
+    software-properties-gtk
+Multi-Arch: foreign
+Description: metapackage for minimal Regolith desktop environment
+ This package contains minimal packages for functional desktop.
+ Some functionality may not work due to missing dependencies.
+
+Package: regolith-desktop-mobile
+Architecture: any
+Conflicts: unclutter-startup
+Depends:
+    ${misc:Depends},
+    gnome-control-center,
+    gnome-flashback,
+    gnome-screensaver,
+    gnome-settings-daemon,
+    i3-gaps-wm,
+    i3xrocks-battery,
+    i3xrocks-cpu-usage,
+    i3xrocks-net-traffic,
+    i3xrocks-next-workspace,
+    i3xrocks-time,
+    i3xrocks,
+    regolith-compositor-none | regolith-compositor,
+    regolith-default-settings,
+    regolith-ftue,
+    regolith-gnome-flashback,
+    regolith-i3-gaps-config,
+    regolith-i3xrocks-config,
+    regolith-look-lascaille | regolith-look,
+    regolith-rofi-config,
+    regolith-styles,
+    regolith-unclutter-xfixes,
+    rofi,
+    xrescat
+Suggests:
+    update-manager,
+    software-properties-gtk
+Multi-Arch: foreign
+Description: metapackage for minimal Regolith desktop environment
+ This package contains minimal packages for functional desktop.
+ Some functionality may not work due to missing dependencies.
+
+Package: regolith-desktop-complete
+Architecture: any
+Conflicts: unclutter-startup
+Depends:
+    ${misc:Depends},
+    gnome-control-center,
+    gnome-flashback,
+    gnome-screensaver,
+    gnome-settings-daemon,
+    i3-gaps-wm,
+    i3xrocks-battery,
+    i3xrocks-bluetooth,
+    i3xrocks-cpu-usage,
+    i3xrocks-disk-capacity,
+    i3xrocks-focused-window-name,
+    i3xrocks-info,
+    i3xrocks-keyboard-layout,
+    i3xrocks-key-indicator,
+    i3xrocks-media-player,
+    i3xrocks-memory,
+    i3xrocks-net-traffic,
+    i3xrocks-next-workspace,
+    i3xrocks-nm-vpn,
+    i3xrocks-openvpn,
+    i3xrocks-temp,
+    i3xrocks-time,
+    i3xrocks-todo,
+    i3xrocks-volume,
+    i3xrocks-weather,
+    i3xrocks-wifi,
+    i3xrocks,
+    regolith-compositor-none | regolith-compositor,
+    regolith-default-settings,
+    regolith-ftue,
+    regolith-gnome-flashback,
+    regolith-i3-gaps-config,
+    regolith-i3xrocks-config,
+    regolith-look-lascaille | regolith-look,
+    regolith-look-ayu,
+    regolith-look-ayu-dark,
+    regolith-look-ayu-mirage,
+    regolith-look-ayu-mirage-regolith,
+    regolith-look-cahuella,
+    regolith-look-dracula,
+    regolith-look-gruvbox,
+    regolith-look-nord,
+    regolith-look-pop-os,
+    regolith-look-solarized-dark,
+    regolith-look-ubuntu,
+    regolith-rofi-config,
+    regolith-styles,
+    regolith-unclutter-xfixes,
+    rofi,
+    xrescat
+Suggests:
+    update-manager,
+    software-properties-gtk
+Multi-Arch: foreign
+Description: metapackage for maximal Regolith desktop environment
+ This package contains all packages available in the Regolith
+ package archive.

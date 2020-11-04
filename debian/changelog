@@ -1,3 +1,10 @@
+regolith-desktop (2.84-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add i3xrocks-next-workspace as dependency to desktop packages.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 03 Nov 2020 22:21:39 -0800
+
 regolith-desktop (2.78-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
