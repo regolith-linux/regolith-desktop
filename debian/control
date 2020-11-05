@@ -44,7 +44,6 @@ Multi-Arch: foreign
 Description: metapackage for Regolith desktop environment
  This package contains all the packages necessary for the 
  desktop environment to function.
-<<<<<<< HEAD
 
 Package: regolith-desktop-minimal
 Architecture: any
@@ -69,6 +68,9 @@ Depends:
     regolith-unclutter-xfixes,
     rofi,
     xrescat
+Provides: regolith-desktop-meta
+Conflicts: regolith-desktop-meta
+Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
@@ -104,11 +106,14 @@ Depends:
     regolith-unclutter-xfixes,
     rofi,
     xrescat
+Provides: regolith-desktop-meta
+Conflicts: regolith-desktop-meta
+Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
 Multi-Arch: foreign
-Description: metapackage for minimal Regolith desktop environment
+Description: metapackage for standard Regolith desktop environment
  This package contains minimal packages for functional desktop.
  Some functionality may not work due to missing dependencies.
 
@@ -140,11 +145,14 @@ Depends:
     regolith-unclutter-xfixes,
     rofi,
     xrescat
+Provides: regolith-desktop-meta
+Conflicts: regolith-desktop-meta
+Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
 Multi-Arch: foreign
-Description: metapackage for minimal Regolith desktop environment
+Description: metapackage for mobile Regolith desktop environment
  This package contains minimal packages for functional desktop.
  Some functionality may not work due to missing dependencies.
 
@@ -208,5 +216,3 @@ Multi-Arch: foreign
 Description: metapackage for maximal Regolith desktop environment
  This package contains all packages available in the Regolith
  package archive.
-=======
->>>>>>> 57e0152... Define virtual package regolith-desktop-meta to prevent multiple desktop packages installed concurrently

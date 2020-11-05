@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 regolith-desktop (2.84-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
@@ -26,14 +25,6 @@ regolith-desktop (2.72-1bionic1) bionic; urgency=medium
   * Version bump for next DE release
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sat, 22 Aug 2020 18:50:44 -0700
-=======
-regolith-desktop (2.87-1bionic) bionic; urgency=medium
-
-  [ Ken Gilmer ]
-  * Define virtual package regolith-desktop-meta to prevent multiple desktop packages installed concurrently
-
- -- Regolith Linux <regolith.linux@gmail.com>  Thu, 05 Nov 2020 08:20:27 -0800
->>>>>>> 57e0152... Define virtual package regolith-desktop-meta to prevent multiple desktop packages installed concurrently
 
 regolith-desktop (2.71-1bionic1) bionic; urgency=medium
 
