@@ -9,7 +9,6 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
 Package: regolith-desktop
 Architecture: any
-Conflicts: unclutter-startup
 Depends:
     ${misc:Depends},
     gnome-control-center,
@@ -35,7 +34,7 @@ Depends:
     rofi,
     xrescat
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta
+Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
@@ -78,7 +77,6 @@ Description: metapackage for minimal Regolith desktop environment
 
 Package: regolith-desktop-standard
 Architecture: any
-Conflicts: unclutter-startup
 Depends:
     ${misc:Depends},
     gnome-control-center,
@@ -104,7 +102,7 @@ Depends:
     rofi,
     xrescat
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta
+Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
@@ -116,7 +114,6 @@ Description: metapackage for standard Regolith desktop environment
 
 Package: regolith-desktop-mobile
 Architecture: any
-Conflicts: unclutter-startup
 Depends:
     ${misc:Depends},
     gnome-control-center,
@@ -143,7 +140,7 @@ Depends:
     rofi,
     xrescat
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta
+Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
@@ -155,7 +152,6 @@ Description: metapackage for Regolith desktop environment on laptops
 
 Package: regolith-desktop-complete
 Architecture: any
-Conflicts: unclutter-startup
 Depends:
     ${misc:Depends},
     gnome-control-center,
@@ -207,7 +203,7 @@ Depends:
     rofi,
     xrescat
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta
+Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
