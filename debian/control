@@ -17,7 +17,6 @@ Depends:
     i3-gaps-wm,
     i3-snapshot,
     i3xrocks,
-    i3xrocks-next-workspace,
     mutter-common,
     nautilus,
     regolith-compositor-picom-glx | regolith-compositor,
@@ -32,7 +31,8 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
-    xrescat
+    xrescat,
+    xorg
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
@@ -41,7 +41,7 @@ Suggests:
     software-properties-gtk
 Multi-Arch: foreign
 Description: metapackage for Regolith desktop environment
- This package contains all the packages necessary for the 
+ This package contains all the packages necessary for the
  desktop environment to function.
 
 Package: regolith-desktop-minimal
