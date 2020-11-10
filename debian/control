@@ -31,6 +31,7 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
+    xorg,
     xrescat
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
@@ -66,6 +67,7 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
+    xorg,
     xrescat
 Suggests:
     update-manager,
@@ -96,6 +98,7 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
+    xorg,
     xrescat
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
@@ -134,6 +137,7 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
+    xorg,
     xrescat
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
@@ -173,6 +177,7 @@ Depends:
     regolith-styles,
     regolith-unclutter-xfixes,
     rofi,
+    xorg,
     xrescat
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
