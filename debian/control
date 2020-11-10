@@ -47,7 +47,6 @@ Description: metapackage for Regolith desktop environment
 
 Package: regolith-desktop-minimal
 Architecture: any
-Conflicts: unclutter-startup
 Depends:
     ${misc:Depends},
     gnome-control-center,
@@ -69,6 +68,9 @@ Depends:
     rofi,
     xorg,
     xrescat
+Provides: regolith-desktop-meta
+Conflicts: unclutter-startup, regolith-desktop-meta
+Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
