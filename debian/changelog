@@ -1,3 +1,11 @@
+regolith-desktop (2.90-1focal) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix conflicts expression in debian/control
+  * Move a number of packages from hard dependencies to recommends to allow users to uninstall them.  Based on work by @moritzheiber in https://github.com/regolith-linux/regolith-desktop/pull/498.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 09 Nov 2020 21:48:35 -0800
+
 regolith-desktop (2.86-1focal) focal; urgency=medium
 
   [ Ken Gilmer ]
