@@ -1,3 +1,9 @@
+regolith-desktop (2.92-1buster) buster; urgency=medium
+
+  *  Create experiemental buster version.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 13 Dec 2020 18:12:19 -0800
+
 regolith-desktop (2.92-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
