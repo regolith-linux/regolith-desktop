@@ -1,3 +1,11 @@
+regolith-desktop (2.93-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update gbp conf based on new branch name schema
+  * Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 19 Dec 2020 17:29:22 -0800
+
 regolith-desktop (2.92-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
