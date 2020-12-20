@@ -1,3 +1,10 @@
+regolith-desktop (2.94-1focal) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 19 Dec 2020 17:31:38 -0800
+
 regolith-desktop (2.90-1focal) focal; urgency=medium
 
   [ Ken Gilmer ]
