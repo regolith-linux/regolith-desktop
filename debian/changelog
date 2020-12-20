@@ -1,3 +1,10 @@
+regolith-desktop (2.95-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix virtual package specification.  Use look w/ less dependencies for minimal meta-package.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 19 Dec 2020 17:36:53 -0800
+
 regolith-desktop (2.91-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
