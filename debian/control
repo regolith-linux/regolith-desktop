@@ -112,6 +112,7 @@ Recommends:
     i3xrocks-next-workspace,
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
+    i3xrocks-rofication,
     i3xrocks-time
 Multi-Arch: foreign
 Description: metapackage for standard Regolith desktop environment
@@ -152,6 +153,7 @@ Recommends:
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
     i3xrocks-next-workspace,
+    i3xrocks-rofication,
     i3xrocks-time
 Multi-Arch: foreign
 Description: metapackage for Regolith desktop environment on laptops
@@ -202,6 +204,7 @@ Recommends:
     i3xrocks-next-workspace,
     i3xrocks-nm-vpn,
     i3xrocks-openvpn,
+    i3xrocks-rofication,
     i3xrocks-temp,
     i3xrocks-time,
     i3xrocks-todo,
