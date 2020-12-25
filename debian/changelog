@@ -1,3 +1,10 @@
+regolith-desktop (2.97-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix recent regression of regolith-look dependency
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 25 Dec 2020 15:02:35 -0800
+
 regolith-desktop (2.94-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
