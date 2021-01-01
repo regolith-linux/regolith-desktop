@@ -1,6 +1,13 @@
 regolith-desktop (2.99-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
+  * Update version to 1.5.1
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 10:49:17 -0800
+
+regolith-desktop (2.99-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
   * Fix recent regression of regolith-look dependency
 
  -- Regolith Linux <regolith.linux@gmail.com>  Fri, 25 Dec 2020 15:05:03 -0800
