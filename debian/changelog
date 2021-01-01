@@ -1,3 +1,10 @@
+regolith-desktop (2.103-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * ship version file with all desktop variants
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 14:05:45 -0800
+
 regolith-desktop (2.100-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
