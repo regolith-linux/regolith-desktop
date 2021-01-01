@@ -1,3 +1,10 @@
+regolith-desktop (2.100-1groovy) groovy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update version to 1.5.1
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 10:47:37 -0800
+
 regolith-desktop (2.97-1groovy) groovy; urgency=medium
 
   [ Ken Gilmer ]
