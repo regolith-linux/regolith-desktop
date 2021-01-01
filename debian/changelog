@@ -1,3 +1,10 @@
+regolith-desktop (2.104-1focal) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * ship version file with all desktop variants
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 14:06:53 -0800
+
 regolith-desktop (2.101-1focal) focal; urgency=medium
 
   [ Ken Gilmer ]
