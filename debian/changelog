@@ -1,3 +1,10 @@
+regolith-desktop (2.101-1focal) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update version to 1.5.1
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 10:48:30 -0800
+
 regolith-desktop (2.98-1focal) focal; urgency=medium
 
   [ Ken Gilmer ]
