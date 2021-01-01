@@ -1,3 +1,10 @@
+regolith-desktop (2.105-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * ship version file with all desktop variants
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 01 Jan 2021 14:07:34 -0800
+
 regolith-desktop (2.102-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
