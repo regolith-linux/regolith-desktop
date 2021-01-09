@@ -48,32 +48,12 @@ Description: metapackage for Regolith desktop environment
 Package: regolith-desktop-minimal
 Architecture: any
 Depends:
-    ${misc:Depends},
-    gnome-control-center,
-    gnome-flashback,
-    gnome-settings-daemon,
-    i3-gaps-wm,
-    i3xrocks,
-    mutter-common,
-    regolith-compositor-none | regolith-compositor,
-    regolith-default-settings,
-    regolith-ftue,
-    regolith-gnome-flashback,
-    regolith-i3-gaps-config,
-    regolith-i3xrocks-config,
-    regolith-look-ubuntu | regolith-look,
-    regolith-rofi-config,
-    regolith-styles,
-    regolith-unclutter-xfixes,
-    rofi,
-    xorg,
-    xrescat
+    ${misc:Depends},        
+    regolith-default-settings,    
+    regolith-session-flashback | regolith-desktop-session
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
-Suggests:
-    update-manager,
-    software-properties-gtk
 Multi-Arch: foreign
 Description: metapackage for minimal Regolith desktop environment
  This package contains minimal packages for functional desktop.
