@@ -1,3 +1,10 @@
+regolith-desktop (2.108-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Bump version to 1.5.2.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 16 Jan 2021 09:41:30 -0800
+
 regolith-desktop (2.105-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
