@@ -207,8 +207,7 @@ Recommends:
     i3xrocks-openvpn,
     i3xrocks-rofication,
     i3xrocks-temp,
-    i3xrocks-time,
-    i3xrocks-todo,
+    i3xrocks-time,    
     i3xrocks-volume,
     i3xrocks-weather,
     i3xrocks-wifi,
@@ -222,6 +221,7 @@ Recommends:
     regolith-look-pop-os,
     regolith-look-solarized-dark,
     regolith-look-ubuntu,
+    regolith-todo
 Multi-Arch: foreign
 Description: metapackage for maximal Regolith desktop environment
  This package contains all packages available in the Regolith

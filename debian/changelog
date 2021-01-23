@@ -1,3 +1,10 @@
+regolith-desktop (2.111-1bionic) UNRELEASED; urgency=medium
+
+  [ Ken Gilmer ]
+  * Move from i3xrocks-todo to regolith-todo to address https://github.com/regolith-linux/regolith-todo/issues/6.  Version bump in version file for 1.5.3.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 23 Jan 2021 11:53:08 -0800
+
 regolith-desktop (2.108-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
