@@ -1,3 +1,10 @@
+regolith-desktop (3.0.1-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Use i3 variant agnostic config package i3-gaps-config
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 06 Feb 2021 22:20:50 -0800
+
 regolith-desktop (3.0.0-1focal) focal; urgency=medium
 
   [ Ken Gilmer ]
