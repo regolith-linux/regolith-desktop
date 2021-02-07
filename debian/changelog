@@ -1,3 +1,10 @@
+regolith-desktop (3.0.2-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Depend on (virtual) i3-wm package instead of gaps
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 07 Feb 2021 15:47:51 -0800
+
 regolith-desktop (3.0.1-1) focal; urgency=medium
 
   [ Ken Gilmer ]
