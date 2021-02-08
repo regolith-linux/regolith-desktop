@@ -1,3 +1,10 @@
+regolith-desktop (3.0.3-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add dependency on terminal
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 07 Feb 2021 21:14:51 -0800
+
 regolith-desktop (3.0.2-1) focal; urgency=medium
 
   [ Ken Gilmer ]

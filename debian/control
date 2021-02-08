@@ -50,7 +50,8 @@ Architecture: any
 Depends:
     ${misc:Depends},        
     regolith-default-settings,    
-    regolith-session-flashback | regolith-desktop-session
+    regolith-session-flashback | regolith-desktop-session,
+    x-terminal-emulator
 Provides: regolith-desktop-meta
 Conflicts: unclutter-startup, regolith-desktop-meta
 Replaces: regolith-desktop-meta
