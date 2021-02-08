@@ -1,3 +1,10 @@
+regolith-desktop (3.0.4-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Refresh package names, create core package for others to base from.  Add mini desktop variant for minimal users.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 07 Feb 2021 21:34:57 -0800
+
 regolith-desktop (3.0.3-1) focal; urgency=medium
 
   [ Ken Gilmer ]
