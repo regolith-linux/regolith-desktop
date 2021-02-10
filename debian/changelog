@@ -1,3 +1,10 @@
+regolith-desktop (3.0.6-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Use i3 partial packages to drive dependencies down
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 09 Feb 2021 22:26:37 -0800
+
 regolith-desktop (3.0.5-1) focal; urgency=medium
 
   [ Ken Gilmer ]

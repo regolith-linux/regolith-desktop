@@ -26,7 +26,6 @@ Depends:
     ${misc:Depends},
     regolith-desktop-core,
     mutter-common,
-    regolith-ftue,
     regolith-i3xrocks-config,
     regolith-i3-rofi
 Provides: regolith-desktop-meta
@@ -40,7 +39,9 @@ Recommends:
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
     i3xrocks-rofication,
-    i3xrocks-time
+    i3xrocks-time,
+    regolith-i3-remontoire,
+    regolith-i3-ftue,
 Multi-Arch: foreign
 Description: metapackage for a light but functional Regolith desktop environment
  This package contains minimal packages for a functional desktop.
