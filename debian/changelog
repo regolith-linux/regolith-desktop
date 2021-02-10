@@ -1,3 +1,10 @@
+regolith-desktop (3.0.5-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fix package spec conflicts expressions.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 09 Feb 2021 21:25:29 -0800
+
 regolith-desktop (3.0.4-1) focal; urgency=medium
 
   [ Ken Gilmer ]
