@@ -1,3 +1,10 @@
+regolith-desktop (3.0.7-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Fixes to small desktop spec
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 13 Feb 2021 18:24:13 -0800
+
 regolith-desktop (3.0.6-1) focal; urgency=medium
 
   [ Ken Gilmer ]

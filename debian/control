@@ -10,11 +10,11 @@ Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 Package: regolith-desktop-core
 Architecture: any
 Depends:
-    ${misc:Depends},        
-    regolith-default-settings,    
+    ${misc:Depends},
+    regolith-default-settings,
     regolith-session-flashback | regolith-desktop-session,
-    xorg,
-    x-terminal-emulator
+    x-terminal-emulator,
+    xorg
 Conflicts: unclutter-startup
 Multi-Arch: foreign
 Description: metapackage for minimal Regolith desktop environment
@@ -25,23 +25,26 @@ Architecture: any
 Depends:
     ${misc:Depends},
     regolith-desktop-core,
-    mutter-common,
-    regolith-i3xrocks-config,
-    regolith-i3-rofi
+    mutter-common
 Provides: regolith-desktop-meta
-Conflicts: unclutter-startup, regolith-desktop-meta
+Conflicts: regolith-desktop-meta
 Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
-Recommends: 
-    i3xrocks-next-workspace,
+Recommends:
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
+    i3xrocks-next-workspace,
     i3xrocks-rofication,
     i3xrocks-time,
-    regolith-i3-remontoire,
+    regolith-i3-compositor,
     regolith-i3-ftue,
+    regolith-i3-gnome,
+    regolith-i3-i3xrocks,
+    regolith-i3-remontoire,
+    regolith-i3-rofi,
+    regolith-i3xrocks-config
 Multi-Arch: foreign
 Description: metapackage for a light but functional Regolith desktop environment
  This package contains minimal packages for a functional desktop.
@@ -81,7 +84,7 @@ Description: metapackage for a light but functional Regolith desktop environment
 #Recommends: i3xrocks-next-workspace
 #Multi-Arch: foreign
 #Description: metapackage for Regolith desktop environment
-# This package contains all the packages necessary for the 
+# This package contains all the packages necessary for the
 # desktop environment to function.
 #
 #
@@ -115,7 +118,7 @@ Description: metapackage for a light but functional Regolith desktop environment
 #Suggests:
 #    update-manager,
 #    software-properties-gtk
-#Recommends: 
+#Recommends:
 #    i3xrocks-next-workspace,
 #    i3xrocks-cpu-usage,
 #    i3xrocks-net-traffic,
@@ -155,7 +158,7 @@ Description: metapackage for a light but functional Regolith desktop environment
 #Suggests:
 #    update-manager,
 #    software-properties-gtk
-#Recommends: 
+#Recommends:
 #    i3xrocks-battery,
 #    i3xrocks-cpu-usage,
 #    i3xrocks-net-traffic,
@@ -196,7 +199,7 @@ Description: metapackage for a light but functional Regolith desktop environment
 #Suggests:
 #    update-manager,
 #    software-properties-gtk
-#Recommends: 
+#Recommends:
 #    i3xrocks-battery,
 #    i3xrocks-bluetooth,
 #    i3xrocks-cpu-usage,
