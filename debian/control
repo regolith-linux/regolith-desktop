@@ -40,6 +40,7 @@ Recommends:
     i3xrocks-time,
     regolith-i3-compositor,
     regolith-i3-ftue,
+    regolith-i3-gaps-partial,
     regolith-i3-gnome,
     regolith-i3-i3xrocks,
     regolith-i3-remontoire,

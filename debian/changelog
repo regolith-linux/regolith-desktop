@@ -1,3 +1,10 @@
+regolith-desktop (3.0.8-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Ship small with i3-gaps
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 13 Feb 2021 18:32:14 -0800
+
 regolith-desktop (3.0.7-1) focal; urgency=medium
 
   [ Ken Gilmer ]
