@@ -33,10 +33,9 @@ Suggests:
     update-manager,
     software-properties-gtk
 Recommends:
+    i3-next-workspace,
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
-    i3xrocks-next-workspace,
-    i3xrocks-rofication,
     i3xrocks-time,
     regolith-i3-compositor,
     regolith-i3-ftue,
@@ -45,6 +44,7 @@ Recommends:
     regolith-i3-i3xrocks,
     regolith-i3-remontoire,
     regolith-i3-rofi,
+    regolith-i3-rofication,
     regolith-i3xrocks-config
 Multi-Arch: foreign
 Description: metapackage for a light but functional Regolith desktop environment
