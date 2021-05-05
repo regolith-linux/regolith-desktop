@@ -1,3 +1,10 @@
+regolith-desktop (2.122-1bionic) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add app launcher to complete desktop metapackage. Fix unneeded dep on mutter-common.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 05 May 2021 07:47:59 -0700
+
 regolith-desktop (2.118-1bionic) bionic; urgency=medium
 
   [ Ken Gilmer ]
