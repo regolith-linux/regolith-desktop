@@ -42,7 +42,7 @@ Suggests:
 Recommends: i3xrocks-next-workspace
 Multi-Arch: foreign
 Description: metapackage for Regolith desktop environment
- This package contains all the packages necessary for the 
+ This package contains all the packages necessary for the
  desktop environment to function.
 
 Package: regolith-desktop-minimal
@@ -108,8 +108,7 @@ Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
-Recommends: 
-    i3xrocks-next-workspace,
+Recommends:
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
     i3xrocks-rofication,
@@ -148,7 +147,7 @@ Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
-Recommends: 
+Recommends:
     i3xrocks-battery,
     i3xrocks-cpu-usage,
     i3xrocks-net-traffic,
@@ -189,7 +188,8 @@ Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
-Recommends: 
+Recommends:
+    i3xrocks-app-launcher,
     i3xrocks-battery,
     i3xrocks-bluetooth,
     i3xrocks-cpu-usage,
@@ -206,7 +206,7 @@ Recommends:
     i3xrocks-openvpn,
     i3xrocks-rofication,
     i3xrocks-temp,
-    i3xrocks-time,    
+    i3xrocks-time,
     i3xrocks-volume,
     i3xrocks-weather,
     i3xrocks-wifi,
