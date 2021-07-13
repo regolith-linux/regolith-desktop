@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: Broadcast Event
         run: |
-          curl -XPOST -u "${{ secrets.PUBLISH_EVENT_USER}}:${{secrets.PUBLISH_EVENT_KEY}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/regolith-linux/repo-ubuntu-focal/dispatches --data '{"event_type": "package_update"}'
+          curl -XPOST -u "${{ secrets.ORG_BROADCAST_USER}}:${{secrets.ORG_BROADCAST_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/regolith-linux/repo-ubuntu-focal/dispatches --data '{ "event_type": "package_update", "source_repo": "regolith-deskop"}'
