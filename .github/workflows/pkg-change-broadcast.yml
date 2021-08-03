@@ -2,9 +2,9 @@ name: pkg-change-broadcast
 
 on:
   push:
-    branches: [ ubuntu/focal ]
+    branches: [ ubuntu/focal, ubuntu/hirsute ]
   pull_request:
-    branches: [ ubuntu/focal ]
+    branches: [ ubuntu/focal, ubuntu/hirsute ]
   workflow_dispatch:
 
 jobs:
