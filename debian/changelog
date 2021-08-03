@@ -1,10 +1,17 @@
+regolith-desktop (3.0.0-1hirsute) hirsute; urgency=medium
+
+  * switch to symver style version specification
+  * event hook testing 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 02 Aug 2021 17:23:38 -0700
+
 regolith-desktop (2.124-1hirsute) hirsute; urgency=medium
 
   [ Ken Gilmer ]
   * Add app launcher to complete desktop metapackage
   * Fix branch on gbp conf
 
- -- Regolith Linux <regolith.linux@gmail.com>  Wed, 05 May 2021 07:41:24 -0700
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 02 Aug 2021 17:23:27 -0700
 
 regolith-desktop (2.121-1hirsute) hirsute; urgency=medium
 
