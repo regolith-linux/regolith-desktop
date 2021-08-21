@@ -1,4 +1,4 @@
-regolith-desktop (3.0.0-1buster) buster; urgency=medium
+regolith-desktop (3.0.0-1bullseye) bullseye; urgency=medium
 
   * Fix version file, update versioning
 
