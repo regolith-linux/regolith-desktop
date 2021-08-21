@@ -1,3 +1,9 @@
+regolith-desktop (3.0.0-1buster) buster; urgency=medium
+
+  * Fix version file, update versioning
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 21 Aug 2021 15:22:58 -0700
+
 regolith-desktop (2.97-1buster) buster; urgency=medium
 
   [ Ken Gilmer ]
