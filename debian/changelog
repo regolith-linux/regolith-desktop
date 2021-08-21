@@ -1,3 +1,10 @@
+regolith-desktop (3.0.1-1hirsute) hirsute; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update version
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 21 Aug 2021 15:30:46 -0700
+
 regolith-desktop (3.0.0-1hirsute) hirsute; urgency=medium
 
   * switch to symver style version specification
