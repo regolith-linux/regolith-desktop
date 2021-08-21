@@ -1,3 +1,10 @@
+regolith-desktop (3.0.2-1hirsute) hirsute; urgency=medium
+
+  [ Ken Gilmer ]
+  * Regolith 2 package model
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 21 Aug 2021 15:40:56 -0700
+
 regolith-desktop (3.0.1-1hirsute) hirsute; urgency=medium
 
   [ Ken Gilmer ]
