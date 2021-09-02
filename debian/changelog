@@ -1,3 +1,10 @@
+regolith-desktop (3.1.0-1) UNRELEASED; urgency=medium
+
+  [ Ken Gilmer ]
+  * Revise package architecture.  Remove -small desktop package, go back to single base package.
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 01 Sep 2021 20:39:11 -0700
+
 regolith-desktop (3.0.1-1bullseye) bullseye; urgency=medium
 
   [ Ken Gilmer ]
