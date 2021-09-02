@@ -11,24 +11,11 @@ Package: regolith-desktop-core
 Architecture: any
 Depends:
     ${misc:Depends},
+    mutter-common
     regolith-default-settings,
     regolith-session-flashback | regolith-desktop-session,
     x-terminal-emulator,
     xorg
-Conflicts: unclutter-startup
-Multi-Arch: foreign
-Description: metapackage for minimal Regolith desktop environment
- This package does not provide a functional desktop environment.
-
-Package: regolith-desktop-small
-Architecture: any
-Depends:
-    ${misc:Depends},
-    regolith-desktop-core,
-    mutter-common
-Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta
-Replaces: regolith-desktop-meta
 Suggests:
     update-manager,
     software-properties-gtk
@@ -46,6 +33,20 @@ Recommends:
     regolith-i3-rofi,
     regolith-i3-rofication,
     regolith-i3xrocks-config
+Provides: regolith-desktop-meta
+Conflicts: regolith-desktop-meta, unclutter-startup
+Replaces: regolith-desktop-meta
 Multi-Arch: foreign
-Description: metapackage for a light but functional Regolith desktop environment
- This package contains minimal packages for a functional desktop.
+Description: metapackage for Regolith desktop environment
+ This package contains a minimal set of packages for a functional desktop.
+
+Package: regolith-mobile
+Architecture: any
+Depends:
+    ${misc:Depends},
+    regolith-desktop
+Recommends:
+    i3xrocks-battery
+Multi-Arch: foreign
+Description: A package for Regolith on mobile devices
+ This package extends regolith-desktop to provide additional functionality for laptops.
