@@ -2,7 +2,7 @@ name: pkg-change-broadcast
 
 on:
   push:
-    branches: [ ubuntu/focal, ubuntu/hirsute, debian/buster, debian/bullseye ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
