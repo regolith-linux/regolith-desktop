@@ -1,9 +1,10 @@
-regolith-desktop (3.1.0-1) UNRELEASED; urgency=medium
+regolith-desktop (4.0.0-1) focal; urgency=medium
 
   [ Ken Gilmer ]
   * Revise package architecture.  Remove -small desktop package, go back to single base package.
+  * Fix typo in packaging, use proper symver
 
- -- Regolith Linux <regolith.linux@gmail.com>  Wed, 01 Sep 2021 20:39:11 -0700
+ -- Regolith Linux <regolith.linux@gmail.com>  Thu, 02 Sep 2021 21:47:25 -0700
 
 regolith-desktop (3.0.1-1bullseye) bullseye; urgency=medium
 

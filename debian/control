@@ -7,11 +7,11 @@ Standards-Version: 4.1.2
 Homepage: https://github.com/regolith-linux/regolith-desktop
 Vcs-Git: https://github.com/regolith-linux/regolith-desktop.git
 
-Package: regolith-desktop-core
+Package: regolith-desktop
 Architecture: any
 Depends:
     ${misc:Depends},
-    mutter-common
+    mutter-common,
     regolith-default-settings,
     regolith-session-flashback | regolith-desktop-session,
     x-terminal-emulator,
