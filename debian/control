@@ -19,20 +19,6 @@ Depends:
 Suggests:
     update-manager,
     software-properties-gtk
-Recommends:
-    i3-next-workspace,
-    i3xrocks-cpu-usage,
-    i3xrocks-net-traffic,
-    i3xrocks-time,
-    regolith-i3-compositor,
-    regolith-i3-ftue,
-    regolith-i3-gaps-partial,
-    regolith-i3-gnome,
-    regolith-i3-i3xrocks,
-    regolith-i3-remontoire,
-    regolith-i3-rofi,
-    regolith-i3-rofication,
-    regolith-i3xrocks-config
 Provides: regolith-desktop-meta
 Conflicts: regolith-desktop-meta, unclutter-startup
 Replaces: regolith-desktop-meta
