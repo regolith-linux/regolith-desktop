@@ -25,14 +25,3 @@ Replaces: regolith-desktop-meta
 Multi-Arch: foreign
 Description: metapackage for Regolith desktop environment
  This package contains a minimal set of packages for a functional desktop.
-
-Package: regolith-mobile
-Architecture: any
-Depends:
-    ${misc:Depends},
-    regolith-desktop
-Recommends:
-    i3xrocks-battery
-Multi-Arch: foreign
-Description: A package for Regolith on mobile devices
- This package extends regolith-desktop to provide additional functionality for laptops.
