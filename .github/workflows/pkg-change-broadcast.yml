@@ -1,0 +1,16 @@
+name: pkg-change-broadcast
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Broadcast Event
+        run: |
+          TARGET_REPO_NAME=package-repo
+          curl -XPOST -u "${{ secrets.ORG_BROADCAST_USER}}:${{secrets.ORG_BROADCAST_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/regolith-linux/$TARGET_REPO_NAME/dispatches --data '{ "event_type": "package_update"}'
