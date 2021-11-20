@@ -1,3 +1,10 @@
+regolith-desktop (4.1.1-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove dependency on mutter-common for Debian
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 19 Nov 2021 18:11:35 -0800
+
 regolith-desktop (4.1.0-1) focal; urgency=medium
 
   [ Ken Gilmer ]
