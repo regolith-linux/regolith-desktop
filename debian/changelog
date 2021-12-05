@@ -1,3 +1,10 @@
+regolith-desktop (4.1.2-1) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Cleanup package desc
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 05 Dec 2021 12:20:10 -0800
+
 regolith-desktop (4.1.1-1) focal; urgency=medium
 
   [ Ken Gilmer ]
