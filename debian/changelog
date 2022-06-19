@@ -1,3 +1,17 @@
+regolith-desktop (4.3.0-bullseye) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Bump dist version
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 19 Jun 2022 11:10:03 -0700
+
+regolith-desktop (4.2.0) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Bump dist version
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 19 Jun 2022 11:08:48 -0700
+
 regolith-desktop (4.1.0-1) focal; urgency=medium
 
   [ Ken Gilmer ]
