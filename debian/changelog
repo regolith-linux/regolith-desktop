@@ -1,3 +1,10 @@
+regolith-desktop (4.4.0-bullseye) bullseye; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update version for new release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 15 Jul 2022 17:18:32 -0700
+
 regolith-desktop (4.3.0-bullseye) focal; urgency=medium
 
   [ Ken Gilmer ]
