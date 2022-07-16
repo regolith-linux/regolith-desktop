@@ -1,3 +1,10 @@
+regolith-desktop (4.2.0) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update version for new release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 15 Jul 2022 17:16:39 -0700
+
 regolith-desktop (4.1.2-1) focal; urgency=medium
 
   [ Ken Gilmer ]
