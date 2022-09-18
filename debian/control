@@ -12,7 +12,7 @@ Architecture: any
 Depends:
     ${misc:Depends},
     regolith-default-settings,
-    regolith-session-flashback | regolith-desktop-session,
+    regolith-desktop-session,
     x-terminal-emulator,
     xorg
 Suggests:
