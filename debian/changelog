@@ -1,3 +1,9 @@
+regolith-desktop (4.5.0-bullseye) bullseye; urgency=medium
+
+  * Bump Regolith version for 2.2 release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Thu, 27 Oct 2022 19:50:50 -0700
+
 regolith-desktop (4.4.0-bullseye) bullseye; urgency=medium
 
   [ Ken Gilmer ]
