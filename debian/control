@@ -25,3 +25,21 @@ Multi-Arch: foreign
 Description: Meta package for Regolith desktop environment
  This package specifies the root package from which the Regolith
  desktop environment can be installed.
+
+Package: regolith-desktop-wayland
+Architecture: any
+Depends:
+    ${misc:Depends},
+    regolith-default-settings,
+    regolith-session-sway,
+    gnome-terminal
+Suggests:
+    update-manager,
+    software-properties-gtk
+Provides: regolith-desktop-meta
+Conflicts: regolith-desktop-meta, unclutter-startup
+Replaces: regolith-desktop-meta
+Multi-Arch: foreign
+Description: Meta package for Regolith desktop environment on wayland.
+ This package specifies the root package from which the Regolith
+ desktop environment can be installed.
