@@ -1,3 +1,9 @@
+regolith-desktop (4.2.2) focal; urgency=medium
+
+  * Created binary package regolith-desktop-wayland
+
+ -- Soumya Ranjan Patnaik <soumyaranjan1812@gmail.com>  Thu, 15 Dec 2022 11:40:57 +0530
+
 regolith-desktop (4.2.1) focal; urgency=medium
 
   * Be agnostic to session variant
