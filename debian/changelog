@@ -1,3 +1,9 @@
+regolith-desktop (4.2.2ubuntu1) focal; urgency=medium
+
+  * Updated control
+
+ -- Soumya Ranjan Patnaik <soumyaranjan1812@gmail.com>  Thu, 15 Dec 2022 18:56:07 +0530
+
 regolith-desktop (4.2.2) focal; urgency=medium
 
   * Created binary package regolith-desktop-wayland
