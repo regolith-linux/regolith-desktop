@@ -37,8 +37,6 @@ Suggests:
     update-manager,
     software-properties-gtk
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta, unclutter-startup
-Replaces: regolith-desktop-meta
 Multi-Arch: foreign
 Description: Meta package for Regolith desktop environment on wayland.
  This package specifies the root package from which the Regolith
