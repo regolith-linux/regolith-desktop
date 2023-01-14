@@ -11,11 +11,8 @@ Package: regolith-desktop
 Architecture: any
 Depends:
     ${misc:Depends},
-    mutter-common,
     regolith-default-settings,
-    regolith-session-flashback | regolith-desktop-session,
-    x-terminal-emulator,
-    xorg
+    regolith-desktop-session
 Suggests:
     update-manager,
     software-properties-gtk
