@@ -1,3 +1,18 @@
+regolith-desktop (4.4.0) focal; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove dependency on mutter-common for Debian
+  * Cleanup package desc
+  * Update version for new release
+  * Package changes
+
+  [ Regolith Linux ]
+  * Be agnostic to session variant
+  * Package changes
+  * Version bump for next release
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 26 Feb 2023 10:17:17 -0800
+
 regolith-desktop (4.3.0) focal; urgency=medium
 
   * Bump Regolith version for 2.2 release
