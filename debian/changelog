@@ -1,3 +1,24 @@
+regolith-desktop (4.6.0-bullseye) bullseye; urgency=medium
+
+  [ Ken Gilmer ]
+  * Remove dependency on mutter-common for Debian
+  * Cleanup package desc
+  * Bump dist version
+  * Package changes
+  * Update version for new release
+  * Package changes
+
+  [ Regolith Linux ]
+  * Be agnostic to session variant
+  * Package changes
+  * Bump Regolith version for 2.2 release
+  * Package changes
+  * Version bump for next release
+  * Package changes
+  * Manual merge from wayland-dev2
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 26 Feb 2023 12:37:07 -0800
+
 regolith-desktop (4.5.0-bullseye) bullseye; urgency=medium
 
   * Bump Regolith version for 2.2 release
