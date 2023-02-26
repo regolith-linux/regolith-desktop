@@ -12,9 +12,7 @@ Architecture: any
 Depends:
     ${misc:Depends},
     regolith-default-settings,
-    regolith-desktop-session,
-    x-terminal-emulator,
-    xorg
+    regolith-desktop-session
 Suggests:
     update-manager,
     software-properties-gtk
