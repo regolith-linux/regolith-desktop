@@ -12,7 +12,7 @@ Architecture: any
 Depends:
     ${misc:Depends},
     regolith-default-settings,
-    regolith-desktop-session
+    regolith-session-flashback
 Suggests:
     update-manager,
     software-properties-gtk
