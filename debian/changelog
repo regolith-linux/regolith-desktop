@@ -1,3 +1,10 @@
+regolith-desktop (4.4.1-focal) focal; urgency=medium
+
+  * Manual merge from wayland-dev2
+  * Depend on flashback session for focal
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Tue, 28 Feb 2023 21:03:42 -0800
+
 regolith-desktop (4.4.0) focal; urgency=medium
 
   [ Ken Gilmer ]
