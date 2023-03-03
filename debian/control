@@ -17,7 +17,7 @@ Suggests:
     update-manager,
     software-properties-gtk
 Provides: regolith-desktop-meta
-Conflicts: regolith-desktop-meta, unclutter-startup
+Conflicts: regolith-desktop-meta, unclutter-startup, regolith-session-sway
 Replaces: regolith-desktop-meta
 Multi-Arch: foreign
 Description: Meta package for Regolith desktop environment
