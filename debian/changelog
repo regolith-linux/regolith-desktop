@@ -1,3 +1,9 @@
+regolith-desktop (4.4.2-focal) focal; urgency=medium
+
+  * Disallow sway packages on focal
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Fri, 03 Mar 2023 07:59:10 -0800
+
 regolith-desktop (4.4.1-focal) focal; urgency=medium
 
   * Manual merge from wayland-dev2
