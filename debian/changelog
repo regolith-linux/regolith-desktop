@@ -1,3 +1,13 @@
+regolith-desktop (4.4.2) jammy; urgency=medium
+
+  [ Ken Gilmer ]
+  * Update dependencies for support of x11 and wayland (#812)
+
+  [ Regolith Linux ]
+  * fix: push regolith-default-settings down to x11 session, possibly unneeded for wayland (experiemental)
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 13 Aug 2023 12:51:22 -0700
+
 regolith-desktop (4.4.1) kinetic; urgency=medium
 
   * Manual merge from wayland-dev2
