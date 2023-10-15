@@ -1,4 +1,4 @@
-regolith-desktop (4.7.0) bullseye; urgency=medium
+regolith-desktop (4.7.0-bullseye) bullseye; urgency=medium
 
   * chore: bump to 3.1
 
