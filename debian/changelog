@@ -1,8 +1,14 @@
+regolith-desktop (4.8.0) jammy; urgency=medium
+
+  * chore: version bump to 3.2
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 08 May 2024 19:23:12 -0700
+
 regolith-desktop (4.7.2) jammy; urgency=medium
 
   * chore: bump to 3.1
 
- -- Regolith Linux <regolith.linux@gmail.com>  Thu, 02 Nov 2023 00:43:17 -0700
+ -- Regolith Linux <regolith.linux@gmail.com>  Wed, 08 May 2024 19:22:45 -0700
 
 regolith-desktop (4.4.2) jammy; urgency=medium
 
