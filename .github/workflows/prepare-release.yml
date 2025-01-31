@@ -1,0 +1,55 @@
+name: Prepare a Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - debian/changelog
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    container: "ghcr.io/regolith-linux/ci-ubuntu:noble-amd64"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare Release
+        id: prepare
+        uses: regolith-linux/actions/prepare-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_BROADCAST_TOKEN2 }}
+        with:
+          name: "${{ github.event.repository.name }}"
+          repo: "${{ github.server_url }}/${{ github.repository }}.git"
+          ref: "${{ github.ref_name }}"
+
+      - name: Push Changes to Voulage
+        uses: stefanzweifel/git-auto-commit-action@v5
+        if: ${{ steps.prepare.outputs.release-exists == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_BROADCAST_TOKEN2 }}
+        with:
+          repository: "${{ steps.prepare.outputs.voulage-path }}"
+          branch: "main"
+          file_pattern: "stage/testing/**"
+          commit_message: "chore: bump ${{ github.event.repository.name }} testing to ${{ steps.prepare.outputs.release-version }}"
+          commit_user_name: regolith-ci-bot
+          commit_user_email: bot@regolith-desktop.com
+          commit_author: "regolith-ci-bot <bot@regolith-desktop.com>"
+
+      - name: Release Package
+        uses: softprops/action-gh-release@v2
+        if: ${{ steps.prepare.outputs.release-exists == 'false' }}
+        with:
+          name: ${{ steps.prepare.outputs.release-version }}
+          tag_name: ${{ steps.prepare.outputs.release-version }}
+          token: ${{ secrets.ORG_BROADCAST_TOKEN2 }}
+          target_commitish: "${{ github.sha }}"
+          generate_release_notes: true

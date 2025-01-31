@@ -1,0 +1,52 @@
+name: Test Pull Request
+
+on:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  matrix-builder:
+    runs-on: ubuntu-24.04
+    outputs:
+      includes: ${{ steps.builder.outputs.includes }}
+      runners: ${{ steps.builder.outputs.runners }}
+    steps:
+      - name: Build Matrix
+        id: builder
+        uses: regolith-linux/actions/build-matrix@main
+        with:
+          name: "${{ github.event.repository.name }}"
+          ref: "${{ github.base_ref }}" # build for target branch of the pull request
+          arch: "amd64"                 # only test on amd64 on pull requests
+          stage: "unstable"
+
+  build:
+    runs-on: ${{ fromJSON(needs.matrix-builder.outputs.runners)[matrix.arch] }}
+    needs: matrix-builder
+    container: "ghcr.io/regolith-linux/ci-${{ matrix.distro }}:${{ matrix.codename }}-${{ matrix.arch }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.matrix-builder.outputs.includes) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Import GPG Key
+        uses: regolith-linux/actions/import-gpg@main
+        with:
+          gpg-key: "${{ secrets.PACKAGE_PRIVATE_KEY2 }}"
+
+      - name: Build Package
+        uses: regolith-linux/actions/build-package@main
+        with:
+          name: "${{ github.event.repository.name }}"
+          distro: "${{ matrix.distro }}"
+          codename: "${{ matrix.codename }}"
+          stage: "unstable"
+          suite: "unstable"
+          component: "main"
+          arch: "${{ matrix.arch }}"

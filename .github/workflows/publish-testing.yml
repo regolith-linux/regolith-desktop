@@ -1,0 +1,144 @@
+name: Publish to Testing
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  matrix-builder:
+    runs-on: ubuntu-24.04
+    outputs:
+      includes: ${{ steps.builder.outputs.includes }}
+      runners: ${{ steps.builder.outputs.runners }}
+    steps:
+      - name: Build Matrix
+        id: builder
+        uses: regolith-linux/actions/build-matrix@main
+        with:
+          name: "${{ github.event.repository.name }}"
+          ref: "${{ github.ref_name }}"
+          arch: "amd64 arm64"
+          stage: "testing"
+
+  build:
+    runs-on: ${{ fromJSON(needs.matrix-builder.outputs.runners)[matrix.arch] }}
+    needs: matrix-builder
+    container: "ghcr.io/regolith-linux/ci-${{ matrix.distro }}:${{ matrix.codename }}-${{ matrix.arch }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.matrix-builder.outputs.includes) }}
+    env:
+      server-address: "${{ secrets.KAMATERA_HOSTNAME2 }}"
+      server-username: "${{ secrets.KAMATERA_USERNAME }}"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Import GPG Key
+        uses: regolith-linux/actions/import-gpg@main
+        with:
+          gpg-key: "${{ secrets.PACKAGE_PRIVATE_KEY2 }}"
+
+      - name: Build Package
+        id: build
+        uses: regolith-linux/actions/build-package@main
+        with:
+          name: "${{ github.event.repository.name }}"
+          distro: "${{ matrix.distro }}"
+          codename: "${{ matrix.codename }}"
+          stage: "testing"
+          suite: "testing"
+          component: "main"
+          arch: "${{ matrix.arch }}"
+
+      - name: Setup SSH
+        uses: regolith-linux/actions/setup-ssh@main
+        with:
+          ssh-host: "${{ env.server-address }}"
+          ssh-key: "${{ secrets.KAMATERA_SSH_KEY }}"
+
+      - name: Upload Package
+        uses: regolith-linux/actions/upload-files@main
+        with:
+          upload-to-folder: "${{ github.event.repository.name }}"
+
+      - name: Upload SourceLog
+        uses: regolith-linux/actions/upload-files@main
+        with:
+          upload-from: "${{ steps.build.outputs.buildlog-path }}"
+          upload-pattern: "SOURCELOG_*.txt"
+          upload-to-base: "/opt/archives/workspace/"
+          upload-to-folder: "${{ github.event.repository.name }}"
+
+  sources:
+    runs-on: ubuntu-24.04
+    needs: build
+    container: "ghcr.io/regolith-linux/ci-ubuntu:noble-amd64"
+    if: ${{ !failure() && !cancelled() }}
+    env:
+      server-address: "${{ secrets.KAMATERA_HOSTNAME2 }}"
+      server-username: "${{ secrets.KAMATERA_USERNAME }}"
+    steps:
+      - name: Import GPG Key
+        uses: regolith-linux/actions/import-gpg@main
+        with:
+          gpg-key: "${{ secrets.PACKAGE_PRIVATE_KEY2 }}"
+
+      - name: Setup SSH
+        uses: regolith-linux/actions/setup-ssh@main
+        with:
+          ssh-host: "${{ env.server-address }}"
+          ssh-key: "${{ secrets.KAMATERA_SSH_KEY }}"
+
+      - name: Rebuild Sources
+        uses: regolith-linux/actions/rebuild-sources@main
+        with:
+          workspace-subfolder: "${{ github.event.repository.name }}"
+          only-component: "testing"
+          only-package: "${{ github.event.repository.name }}"
+
+  publish:
+    runs-on: ubuntu-24.04
+    needs: sources
+    container: "ghcr.io/regolith-linux/ci-ubuntu:noble-amd64"
+    if: ${{ !failure() && !cancelled() }}
+    env:
+      server-address: "${{ secrets.KAMATERA_HOSTNAME2 }}"
+      server-username: "${{ secrets.KAMATERA_USERNAME }}"
+    steps:
+      - name: Setup SSH
+        uses: regolith-linux/actions/setup-ssh@main
+        with:
+          ssh-host: "${{ env.server-address }}"
+          ssh-key: "${{ secrets.KAMATERA_SSH_KEY }}"
+
+      - name: Publish Repo
+        uses: regolith-linux/actions/publish-repo@main
+        with:
+          packages-path-subfolder: "${{ github.event.repository.name }}"
+          only-component: "testing"
+
+  manifests:
+    runs-on: ubuntu-24.04
+    needs: [matrix-builder, publish]
+    container: "ghcr.io/regolith-linux/ci-ubuntu:noble-amd64"
+    if: ${{ !failure() && !cancelled() }}
+    steps:
+      - name: Update Manifests
+        uses: regolith-linux/actions/update-manifest@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_BROADCAST_TOKEN2 }}
+        with:
+          name: "${{ github.event.repository.name }}"
+          repo: "${{ github.server_url }}/${{ github.repository }}.git"
+          ref: "${{ github.ref_name }}"
+          sha: "${{ github.sha }}"
+          matrix: "${{ needs.matrix-builder.outputs.includes }}"
+          suite: "testing"
+          component: "main"
