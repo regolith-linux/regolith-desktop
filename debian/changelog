@@ -1,3 +1,16 @@
+regolith-desktop (4.9.0) jammy; urgency=medium
+
+  [ Khosrow Moossavi ]
+  * chore: remove obsolete package broadcast action
+  * feat: enable github action to test pull requests
+  * feat: enable github action to publish to unstable
+  * feat: enable github action to publish to testing
+  * feat: enable github action to prepare release
+  * chore: remove trailing empty line from version file
+  * chore: version bump to 3.3
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sat, 01 Feb 2025 17:21:59 -0500
+
 regolith-desktop (4.8.0) jammy; urgency=medium
 
   * chore: version bump to 3.2
