@@ -1,3 +1,11 @@
+regolith-desktop (4.10.0) jammy; urgency=medium
+
+  [ Khosrow Moossavi ]
+  * feat: use build-only to test pull request
+  * chore: prepare for regolith v3.4 release (#1150)
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 03 Nov 2025 02:47:08 +0000
+
 regolith-desktop (4.9.0) jammy; urgency=medium
 
   [ Khosrow Moossavi ]
