@@ -1,3 +1,13 @@
+regolith-desktop (4.11.0) jammy; urgency=medium
+
+  [ Carlos Fernandez Sanz ]
+  * chore: prepare for regolith v3.5 release (#1167)
+
+  [ Ken Gilmer ]
+  * chore: copy public files to correct default branch (#1168)
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 19 Oct 2026 15:55:22 -0700
+
 regolith-desktop (4.10.0) jammy; urgency=medium
 
   [ Khosrow Moossavi ]
@@ -204,7 +214,7 @@ regolith-desktop (2.71-1focal1) focal; urgency=medium
 regolith-desktop (2.70-1focal1) focal; urgency=medium
 
   [ Ken Gilmer ]
-  * Version bump to appease launchpad. 
+  * Version bump to appease launchpad.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Wed, 03 Jun 2020 07:59:50 -0700
 
@@ -224,13 +234,13 @@ regolith-desktop (2.66-1focal1) focal; urgency=medium
 
 regolith-desktop (2.65-1focal1) focal; urgency=medium
 
-  * Package: Remove postinst to unblock upgrades (#432) 
+  * Package: Remove postinst to unblock upgrades (#432)
 
  -- Regolith Linux <regolith.linux@gmail.com>  Thu, 28 May 2020 06:45:52 -0700
 
 regolith-desktop (2.64-1focal1) focal; urgency=medium
 
-  * Package: Remove unclutter-startup, if installed 
+  * Package: Remove unclutter-startup, if installed
 
  -- Regolith Linux <regolith.linux@gmail.com>  Tue, 26 May 2020 08:11:37 -0700
 
@@ -242,7 +252,7 @@ regolith-desktop (2.63-1focal1) focal; urgency=medium
 
 regolith-desktop (2.61-1focal1) focal; urgency=medium
 
-  * Bump version file for R1.4.1 release. 
+  * Bump version file for R1.4.1 release.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sat, 02 May 2020 16:32:46 -0700
 
@@ -254,7 +264,7 @@ regolith-desktop (2.60-1focal1) focal; urgency=medium
 
 regolith-desktop (2.59-1focal1) focal; urgency=medium
 
-  * Add dependency on libmutter-6-0 to resolve crash in gnome-control-center. 
+  * Add dependency on libmutter-6-0 to resolve crash in gnome-control-center.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sun, 26 Apr 2020 12:02:48 -0700
 
@@ -266,40 +276,40 @@ regolith-desktop (2.58-1focal1) focal; urgency=medium
 
 regolith-desktop (2.57-1) eoan; urgency=medium
 
-  * Remove depency on gnome-screensaver for 20.04. 
+  * Remove depency on gnome-screensaver for 20.04.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sat, 18 Apr 2020 20:29:16 -0700
 
 regolith-desktop (2.56-1) eoan; urgency=medium
 
   * Remove direct dependency on software-properties-gtk.
-  * Depend on correct look for 1.4. 
+  * Depend on correct look for 1.4.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sat, 18 Apr 2020 11:01:12 -0700
 
 regolith-desktop (2.55-1) eoan; urgency=medium
 
   * Add top-level dep on regolith-ftue for clarity of intention.
-  * Remove direct dependency on update-manager as can work without. 
+  * Remove direct dependency on update-manager as can work without.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Fri, 17 Apr 2020 19:28:29 -0700
 
 regolith-desktop (2.54-1) eoan; urgency=medium
 
-  * Migrate from st-term to gnome-terminal. 
+  * Migrate from st-term to gnome-terminal.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Thu, 16 Apr 2020 22:03:08 -0700
 
 regolith-desktop (2.53) eoan; urgency=medium
 
   * Express look dependency on virtual package.
-  * Use ayu-mirage-regolith as default look. 
+  * Use ayu-mirage-regolith as default look.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Fri, 03 Apr 2020 10:37:33 -0700
 
 regolith-desktop (2.52) eoan; urgency=medium
 
-  * Integrate rofication and rofi file search. 
+  * Integrate rofication and rofi file search.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Wed, 01 Apr 2020 11:54:08 -0700
 
@@ -311,69 +321,69 @@ regolith-desktop (2.51) eoan; urgency=medium
 
 regolith-desktop (2.50) eoan; urgency=medium
 
-  * Add file to track DE version on filesystem for support. 
+  * Add file to track DE version on filesystem for support.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sun, 29 Mar 2020 10:30:59 -0700
 
 regolith-desktop (2.49-1ubuntu1~ppa1) eoan; urgency=medium
 
-  * Version bump to appease package builder in lieu of rollback. 
+  * Version bump to appease package builder in lieu of rollback.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Tue, 11 Feb 2020 13:22:09 -0800
 
 regolith-desktop (2.47-1ubuntu1~ppa1) eoan; urgency=medium
 
-  * Migrate to new PPA. 
+  * Migrate to new PPA.
 
  -- Regolith Linux <regolith.linux@gmail.com>  Sun, 12 Jan 2020 18:05:40 -0800
 
 regolith-desktop (2.46-1ubuntu1~ppa1) eoan; urgency=medium
 
-  * Remove deprecated regolith-rofi-config. 
+  * Remove deprecated regolith-rofi-config.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 31 Dec 2019 10:29:37 -0800
 
 regolith-desktop (2.45-1ubuntu1~ppa3) eoan; urgency=medium
 
-  * Depend on default Regolith look. 
+  * Depend on default Regolith look.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Mon, 30 Dec 2019 00:25:14 -0800
 
 regolith-desktop (2.45-1ubuntu1~ppa2) eoan; urgency=medium
 
-  * Swap compositor and look dependency order. 
+  * Swap compositor and look dependency order.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 29 Dec 2019 22:29:45 -0800
 
 regolith-desktop (2.45-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Remove regolith-assets, deprecated by regolith-look-*
-  * Default to R1.3 look; cahuella. 
+  * Default to R1.3 look; cahuella.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 29 Dec 2019 14:23:27 -0800
 
 regolith-desktop (2.44-1ubuntu1~ppa3) eoan; urgency=medium
 
-  * Add gnome-screensaver back as a dependency, it's needed for lockscreen. 
+  * Add gnome-screensaver back as a dependency, it's needed for lockscreen.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Wed, 25 Dec 2019 19:13:35 -0800
 
 regolith-desktop (2.44-1ubuntu1~ppa2) eoan; urgency=medium
 
-  * Remove unnecessary dependency on remontoire. 
+  * Remove unnecessary dependency on remontoire.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 24 Dec 2019 21:25:36 -0800
 
 regolith-desktop (2.44-1ubuntu1~ppa1) eoan; urgency=medium
 
   * Switch from Conky to Remontoire for shortcuts.
-  * Fix default look package name. 
+  * Fix default look package name.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 24 Dec 2019 20:39:04 -0800
 
 regolith-desktop (2.43-1ubuntu1~ppa1) eoan; urgency=medium
 
-  * Add i3-snapshot as a required package 
+  * Add i3-snapshot as a required package
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 15 Dec 2019 16:21:06 -0800
 
@@ -387,70 +397,70 @@ regolith-desktop (2.42-1ubuntu1~ppa1) eoan; urgency=medium
 
 regolith-desktop (2.41-1ubuntu1~ppa1) eoan; urgency=medium
 
-  * Move to virtual package for compositor, default to compton-glx. 
+  * Move to virtual package for compositor, default to compton-glx.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Fri, 08 Nov 2019 07:33:09 -0800
 
 regolith-desktop (2.30-1ubuntu1~ppa3) eoan; urgency=medium
 
-  * Remove xeventbind and xeventbind-regolith from dependencies. 
+  * Remove xeventbind and xeventbind-regolith from dependencies.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 22 Oct 2019 20:27:41 -0700
 
 regolith-desktop (2.30-1ubuntu1~ppa2) disco; urgency=medium
 
-  * Specify gnome dependencies required for Regolith. 
+  * Specify gnome dependencies required for Regolith.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 10 Sep 2019 19:57:58 -0700
 
 regolith-desktop (2.30-1ubuntu1~ppa1) disco; urgency=medium
 
-  * Move from Moka to Paper icons. 
+  * Move from Moka to Paper icons.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 31 Aug 2019 13:06:54 -0700
 
 regolith-desktop (2.29-1ubuntu1~ppa1) disco; urgency=medium
 
-  * Ship GTK theme nordic by default. 
+  * Ship GTK theme nordic by default.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 31 Aug 2019 08:10:54 -0700
 
 regolith-desktop (2.28-1ubuntu1~ppa1) disco; urgency=medium
 
-  * Add xeventbind and xeventbind-regolith for wallpaper fix. 
+  * Add xeventbind and xeventbind-regolith for wallpaper fix.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Wed, 28 Aug 2019 20:12:11 -0700
 
 regolith-desktop (2.27-1ubuntu1ppa1) disco; urgency=medium
 
   * Migrate from regolith-i3 to regolith-i3-gaps-config and i3-gaps.
-    Fixes https://github.com/regolith-linux/regolith-desktop/issues/61. 
+    Fixes https://github.com/regolith-linux/regolith-desktop/issues/61.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 20 Aug 2019 21:24:54 -0700
 
 regolith-desktop (2.26-1ubuntu1ppa1) disco; urgency=medium
 
   * Remove regolith-gdm3-theme from package.  Fixes
-    https://github.com/regolith-linux/regolith-desktop/issues/92. 
+    https://github.com/regolith-linux/regolith-desktop/issues/92.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 20 Aug 2019 07:54:20 -0700
 
 regolith-desktop (2.25-1ubuntu1ppa1) disco; urgency=medium
 
   * Deprecate regolith-scripts in support of
-    https://github.com/regolith-linux/regolith-desktop/issues/91. 
+    https://github.com/regolith-linux/regolith-desktop/issues/91.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 15 Aug 2019 07:47:09 -0700
 
 regolith-desktop (2.24-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Add regolith-scripts. 
+  * Add regolith-scripts.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 25 Jul 2019 07:13:41 -0700
 
 regolith-desktop (2.23-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Remove i3blocks. 
+  * Remove i3blocks.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Wed, 24 Jul 2019 21:17:34 -0700
 
@@ -463,109 +473,109 @@ regolith-desktop (2.22-1ubuntu1ppa1) bionic; urgency=medium
 
 regolith-desktop (2.21-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Move back to i3blocks until regressions fixed, add fontawesome. 
+  * Move back to i3blocks until regressions fixed, add fontawesome.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 14 Jul 2019 20:52:52 -0700
 
 regolith-desktop (2.20-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Swap i3xrocks from i3blocks. Add xrescat and regolith-styles. 
+  * Swap i3xrocks from i3blocks. Add xrescat and regolith-styles.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 14 Jul 2019 17:50:38 -0700
 
 regolith-desktop (2.12-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Depend on xgetres for Xresources feature. 
+  * Depend on xgetres for Xresources feature.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Wed, 03 Jul 2019 06:39:58 -0700
 
 regolith-desktop (2.11-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Depend on gnome-control-center. Fixes #57. 
+  * Depend on gnome-control-center. Fixes #57.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Wed, 03 Jul 2019 06:20:21 -0700
 
 regolith-desktop (2.10-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Depend on regolith-styles. 
+  * Depend on regolith-styles.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Tue, 02 Jul 2019 21:45:23 -0700
 
 regolith-desktop (2.09-1ubuntu1ppa1) bionic; urgency=medium
 
-  * Add arm build. 
+  * Add arm build.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Fri, 28 Jun 2019 21:23:49 -0700
 
 regolith-desktop (2.08-1ubuntu1) bionic; urgency=medium
 
-  * Remove feh as relying on gnome for wallpaper. 
+  * Remove feh as relying on gnome for wallpaper.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 22 Jun 2019 21:13:53 -0700
 
 regolith-desktop (2.07-1ubuntu1) bionic; urgency=medium
 
-  * Add regolith-gdm3-theme. 
+  * Add regolith-gdm3-theme.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 28 Mar 2019 21:51:06 -0700
 
 regolith-desktop (2.06-1ubuntu2) bionic; urgency=medium
 
-  * Add unclutter-xfixes. 
+  * Add unclutter-xfixes.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 17 Mar 2019 09:41:58 -0700
 
 regolith-desktop (2.06-1ubuntu1) bionic; urgency=medium
 
-  * Depend on new package of simple term (st). 
+  * Depend on new package of simple term (st).
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 16 Mar 2019 10:46:35 -0700
 
 regolith-desktop (2.05-1ubuntu5) bionic; urgency=medium
 
-  * Add dependency on Conky config for keybindings. 
+  * Add dependency on Conky config for keybindings.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 09 Mar 2019 21:45:22 -0800
 
 regolith-desktop (2.05-1ubuntu4) bionic; urgency=medium
 
-  * Add dependency on icon theme. 
+  * Add dependency on icon theme.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 07 Mar 2019 20:30:55 -0800
 
 regolith-desktop (2.05-1ubuntu3) bionic; urgency=medium
 
-  * Remove dependency on deprecated package regolith-i3-config 
+  * Remove dependency on deprecated package regolith-i3-config
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 07 Mar 2019 20:21:31 -0800
 
 regolith-desktop (2.05-1ubuntu2) bionic; urgency=medium
 
-  * Add dependency on regolith-i3blocks 
+  * Add dependency on regolith-i3blocks
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 21:26:42 -0800
 
 regolith-desktop (2.05-1ubuntu1) bionic; urgency=medium
 
-  * Add dependency on regolith-terminal 
+  * Add dependency on regolith-terminal
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 19:20:16 -0800
 
 regolith-desktop (2.01-1ubuntu3) bionic; urgency=medium
 
-  * Move to regolith-i3-wm dependency. 
+  * Move to regolith-i3-wm dependency.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sun, 03 Mar 2019 15:23:16 -0800
 
 regolith-desktop (2.01-1ubuntu2) bionic; urgency=medium
 
-  * Move to regolith-i3-wm-gaps dependency. 
+  * Move to regolith-i3-wm-gaps dependency.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Sat, 02 Mar 2019 18:41:15 -0800
 
 regolith-desktop (2.01-1ubuntu1) bionic; urgency=medium
 
-  * Added regolith-terminal. 
+  * Added regolith-terminal.
 
  -- Ken Gilmer <kgilmer@gmail.com>  Thu, 28 Feb 2019 21:04:57 -0800
 
